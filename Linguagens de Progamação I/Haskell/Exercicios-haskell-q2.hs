@@ -1,16 +1,15 @@
 main :: IO ()
-somaAB :: Int -> Int -> Int -> String
-somaAB a b c
-  | a + b < c = "A soma de A + B e MAIOR que C."
-  | a + b > c = "A soma de A + B e MENOR que C."
 main = do
-  putStrLn ("\nDigite o valor A.")
-  a <- readLn
+  putStrLn "\nDigite seu nome."
+  nome <- getLine
+  putStrLn "\nDigite seu sexo.(M ou F)"
+  sexo <- getLine
+  putStrLn "\nDigite seu estado civil.(SOLTEIRO ou CASADO)"
+  estadocivil <- getLine
 
-  putStrLn ("\nDigite o valor B.")
-  b <- readLn
-
-  putStrLn ("\nDigite o valor C.")
-  c <- readLn
-
-  putStrLn ("\n" ++ show (somaAB a b c))
+  if sexo == "F" && estadocivil == "CASADO"
+    then do
+      putStrLn "\nDigite o tempo de casada.(anos)"
+      tempoCasada <- getLine
+      putStrLn ("\nNome: " ++ nome ++ "\nSexo: " ++ sexo ++ "\nEstado Civil: " ++ estadocivil ++ "\nTempo de casada: " ++ tempoCasada ++ " anos")
+    else putStrLn ("\nNome: " ++ nome ++ "\nSexo: " ++ sexo ++ "\nEstado Civil: " ++ estadocivil)
