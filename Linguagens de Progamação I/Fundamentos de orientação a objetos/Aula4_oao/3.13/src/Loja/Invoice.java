@@ -1,4 +1,7 @@
+package Loja;
+
 public class Invoice {
+
   private String numero;
   private String descricao;
   private int quantidade;
@@ -43,7 +46,7 @@ public class Invoice {
     this.preco = preco;
   }
 
-  public double getValorFatura() {
+  public double getValorInvoice() {
     if (quantidade < 0) {
       quantidade = 0;
     }
@@ -55,7 +58,4 @@ public class Invoice {
     return quantidade * preco;
   }
 
-  public double getValorInvoice() {
-    return 0;
-  }
 }
