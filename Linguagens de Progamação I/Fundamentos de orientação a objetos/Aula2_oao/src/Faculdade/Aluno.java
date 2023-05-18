@@ -2,8 +2,8 @@ package Faculdade;
 
 public class Aluno {
   // atributos da classe
-  String matricula;
-  String situacao;
+  private String matricula;
+  private String situacao;
 
   // métodos da classe
 
@@ -36,6 +36,11 @@ public class Aluno {
   public void setEvadir(String evadir) {
     if (evadir == "true")
       this.situacao = "Evadido.";
+  }
+
+  // retorna o curso que o aluno esta matriculado
+  public String novaMat(String m) {
+    return matricula = m;
   }
 
 }

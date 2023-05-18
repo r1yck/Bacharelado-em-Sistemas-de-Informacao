@@ -2,25 +2,54 @@ package Faculdade;
 
 public class Turma {
   // atributos da classe
-  String turma;
-  String aluno;
+  private int ano;
+  private int semestre;
+  private int diaSemana;
+  private String horarios;
 
   // métodos da classe
-
-  public String getTurma() {
-    return turma;
+  public int getAno() {
+    return ano;
   }
 
-  public void abrirTurma(String turma) {
-    this.turma = turma;
+  public void setAno(int ano) {
+    this.ano = ano;
   }
 
-  public String getAluno() {
-    return aluno;
+  public int getSemestre() {
+    return semestre;
   }
 
-  public void matricularAluno(String aluno) {
-    this.aluno = aluno;
+  public void setSemestre(int semestre) {
+    this.semestre = semestre;
   }
 
+  public int getDiaSemana() {
+    return diaSemana;
+  }
+
+  public void setDiaSemana(int diaSemana) {
+    this.diaSemana = diaSemana;
+  }
+
+  public String getHorarios() {
+    return horarios;
+  }
+
+  public void setHorarios(String horarios) {
+    this.horarios = horarios;
+  }
+
+  public String abrirTurma(int a, int s) {
+    String retorna = "";
+    this.ano = a;
+    this.semestre = s;
+    retorna = "" + a + " " + s;
+    return retorna;
+  }
+
+  public int matricularAluno(int s) {
+    this.semestre = s;
+    return semestre;
+  }
 }

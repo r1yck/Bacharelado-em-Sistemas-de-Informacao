@@ -17,12 +17,11 @@ public class Principal {
     a1.setFormar(null);
     a1.setEvadir(null);
 
-    t1.abrirTurma("BSI");
-    t1.matricularAluno(null);
-
     JOptionPane.showMessageDialog(null,
-        "Aluno 1 \nMatrícula: " + a1.getMatricularCurso() + "\nSituação: " + a1.getSituacao() + "\nTurma: "
-            + t1.getTurma());
+        "Aluno 1 \nMatrícula: " + a1.getMatricularCurso() + "\nSituação: " + a1.getSituacao());
+
+    JOptionPane.showMessageDialog(null, " Turma aberta " + t1.abrirTurma(2023, 1));
+    JOptionPane.showMessageDialog(null, " Semestre cursado " + t1.matricularAluno(1));
 
   }
 
