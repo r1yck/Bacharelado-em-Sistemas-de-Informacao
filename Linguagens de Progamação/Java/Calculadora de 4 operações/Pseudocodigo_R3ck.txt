@@ -1,0 +1,30 @@
+Var
+n1, n2, som, sub, mul, div, sn1, sn2, sop, float
+        
+
+inicio
+
+ler n1;
+ler sop;
+ler n2;
+
+caso valor de sop = "+"
+som <- n1+n2
+escrever "O resultado da adição é: " + som;
+
+caso valor de sop = "-"
+sub <- n1-n2
+escrever "O resultado da subtração é: " + sub;
+
+caso valor de sop = "*" 
+mul <- n1*n2
+escrever "O resultado da multiplicação é: " + mul;
+
+caso valor de sop = "/" 
+div <- n1/n2
+escrever "O resultado da divisão é: " + div;
+
+caso valor de sop = default
+escrever "OPERAÇÃO INVÁLIDA."
+
+fim

@@ -1,0 +1,12 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args){
+        
+        char c = 97;
+        
+        JOptionPane.showMessageDialog(null,c);
+        
+        
+    }
+}

@@ -1,0 +1,13 @@
+Tarefas 26/07
+
+1. Crie um aplicativo que faça o cálculo da área das seguintes figuras:
+a) Quadrado de lado 5;
+b) Triângulo retângulo de lados 3 e 5;
+c) Circuferência de raio 3;
+
+Escreva o algoritmo, o teste e código java.
+
+
+2. Escreva um aplicativo java que calcule o valor do imposto de renda para salários de mil reais, dois mil e três mil, com as respectivas taxas: 7%, 9% e 11%.
+
+Escreva o algoritmo, o teste e o código java 

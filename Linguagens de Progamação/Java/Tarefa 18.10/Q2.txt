@@ -1,0 +1,16 @@
+int n;
+        double res=0;
+        n=Integer.parseInt(JOptionPane.showInputDialog(null, "Quantos valores pretende usar?"));
+        int k[]=new int [n];
+        
+        for (int i=0;i<n;i++){
+        
+            k[i]=Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o "+(i+1)+"º valor"));
+            res = res+k[i];
+            
+        }
+        res=(res/n);
+        JOptionPane.showMessageDialog(null, "A média de todos os valores é igual à: "+res);
+    }
+    
+}

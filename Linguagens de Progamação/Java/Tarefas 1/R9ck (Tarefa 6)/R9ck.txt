@@ -1,0 +1,27 @@
+
+package r9ck;
+
+import javax.swing.JOptionPane;
+
+public class R9ck {
+
+    
+    public static void main(String[] args) {
+        
+        float n1,res1,res2;
+        String sn1;
+        
+        sn1 = JOptionPane.showInputDialog(null,"Digite seu salário");
+        
+        n1 = Float.parseFloat(sn1);
+        
+        
+       
+        res1 = n1*15/100;
+        res2 = n1+res1;
+        
+        JOptionPane.showMessageDialog(null,"Seu salário acrescido 15% é "+ res2);
+        
+    }
+    
+}

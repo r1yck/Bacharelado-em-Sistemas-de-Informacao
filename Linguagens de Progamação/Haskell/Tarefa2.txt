@@ -1,0 +1,14 @@
+Tarefa 2
+
+1. Faça um programa que receba duas variáveis: o valor das horas e do minutos. 
+Em seguida, converta tudo para segundos.
+
+2. Crie um programa que receba a temperatura em graus Celsius e converta para 
+Farenheit. Fórmula: F = (ºC x 1,8) + 32
+
+3. Faça um programa que pergunte o ano atual e sua idade, em seguida exibe seu 
+ano de nascimento.
+
+4. Crie um software que recebe o valor do salário e calcula os 27,5% do Imposto 
+de renda. A saída do seu programa deve ser o salário bruto (sem abatimento), o 
+valor do Imposto a ser pago e o seu salário líquido (Após descontar o IR).

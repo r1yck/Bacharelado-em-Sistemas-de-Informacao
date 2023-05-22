@@ -1,0 +1,9 @@
+ler n1;
+ler n2;
+
+n1 <- 4
+n2 <- 3
+
+res <- 4%3
+
+escreva "O resto da divisão é: " + 1;

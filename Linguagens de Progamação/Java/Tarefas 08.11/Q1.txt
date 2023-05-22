@@ -1,0 +1,28 @@
+package q1;
+
+import javax.swing.JOptionPane;
+
+public class Q1 {
+
+    
+    public static double imc(double m, double a, double imc) {
+        
+         double sM, sA;
+         sM = m; sA = a;
+         imc = sM/(sA*sA);
+         return imc;
+    
+      }
+    
+    public static void main(String[] args) {
+        
+        double m1=0, a1=0,imc1=0;
+        
+        m1 = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite sua massa."));
+        a1 = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite sua altura."));
+
+        JOptionPane.showMessageDialog(null,"Seu IMC: " + imc(m1,a1,imc1));
+        
+        
+    }
+}

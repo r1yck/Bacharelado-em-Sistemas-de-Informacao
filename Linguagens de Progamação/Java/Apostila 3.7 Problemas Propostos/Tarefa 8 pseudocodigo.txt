@@ -1,0 +1,21 @@
+Var
+n1,n2,n3,mp,float;
+
+inicio
+
+escreva "Calcule a média ponderada das suas notas.";
+
+escreva "Digite sua primeira nota";
+ler n1;
+
+escreva "Digite sua segunda nota";
+ler n2;
+
+escreva "Digite sua terceira nota";
+ler n3;
+
+mp = (n1*1 + n2*2 + n3*3)/(1+2+3);
+
+escreva "A média ponderada das suas notas é: " + "\n" + mp;
+
+fim

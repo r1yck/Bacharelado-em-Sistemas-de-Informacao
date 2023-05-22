@@ -1,0 +1,36 @@
+import javax.swing.JOptionPane;
+
+public class App {
+
+    
+    public static void main(String[] args) {
+
+        int vetor[];
+        vetor = new int[10];
+        int x=10,contador=0;
+
+        String v="",mostrar="";
+
+        for(int i=0;i<10;i++){
+
+           v = JOptionPane.showInputDialog(null, "Qual o valor?");
+           vetor [i] = Integer.parseInt(v);
+
+        }
+       
+        for(int j=0;j<10;j++){
+           
+           if(vetor[j] == x)
+              contador++;
+
+              if(vetor[j]%x==0)
+              mostrar = mostrar+vetor[j]+"";
+
+        }
+
+        JOptionPane.showMessageDialog(null,"Repetição: " + contador + "\nNúmeros divisiveis: " + mostrar);
+
+        
+    }
+    
+}

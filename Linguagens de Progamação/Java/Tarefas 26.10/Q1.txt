@@ -1,0 +1,87 @@
+package q1;
+
+import javax.swing.JOptionPane;
+
+public class Q1 {
+
+    
+    public static String impostoA(String sA) {
+        
+         String impA;
+         sA = "Insento.";
+         impA = sA;
+         return impA;
+    
+      }
+    
+    public static double impostoB(double sB) {
+        
+         double impB;
+         sB = sB*0.075; 
+         impB = sB;
+         return impB;
+    
+      }
+    
+    public static double impostoC(double sC) {
+        
+         double impC;
+         sC = sC*0.11; 
+         impC = sC;
+         return impC;
+    
+      }
+    
+    public static double impostoD(double sD) {
+        
+         double impD;
+         sD = sD*0.15;
+         impD = sD;
+         return impD;
+    
+      }
+    
+    public static double impostoE(double sE) {
+        
+         double impE;
+         sE = sE*0.275;
+         impE = sE;
+         return impE;
+    
+      }
+    
+    public static void main(String[] args) {
+        
+        double sal = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite seu salário: "));
+        String salI ="";
+        if(sal > 0 && sal < 1900){
+        
+        JOptionPane.showMessageDialog(null,impostoA(salI));
+     }
+        if(sal > 1900 && sal < 3800){
+    
+        JOptionPane.showMessageDialog(null,"Imposto: R$ " + impostoB(sal));
+            
+     }
+        if(sal > 3800 && sal < 5600){
+    
+        JOptionPane.showMessageDialog(null,"Imposto: R$ " + impostoC(sal));
+            
+     }
+        if(sal > 5600 && sal < 7400){
+    
+        JOptionPane.showMessageDialog(null,"Imposto: R$ " + impostoD(sal));
+            
+     }
+        if(sal > 7400){
+    
+        JOptionPane.showMessageDialog(null,"Imposto: R$ " + impostoE(sal));
+            
+     }
+        if(sal < 0){
+        
+        JOptionPane.showMessageDialog(null,"Salário inválido.");
+            
+        }
+    }
+}

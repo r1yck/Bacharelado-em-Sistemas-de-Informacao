@@ -1,0 +1,19 @@
+Var
+dia, mes, mes2, total, int;
+
+inicio
+
+escreva "Informe o dia e o mês."
+escreva "Dia:"
+ler dia;
+
+escreva "Mês:"
+ler mes;
+
+mes2 = mes - 1;
+total = dia + mes2 * 30;
+
+escreva "Já se passaram " + total + " dias desde o ínicio do ano.";
+
+fim
+ 

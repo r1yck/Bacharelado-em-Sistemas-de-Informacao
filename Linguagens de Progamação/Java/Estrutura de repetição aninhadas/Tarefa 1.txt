@@ -1,0 +1,35 @@
+String mostrar0="",mostrar1="",mostrar2="",mostrar3="",mostrar4="",mostrar5="",espaçar="\n";
+        int contador, cont;
+
+        for(contador=0;contador < 1;contador++){
+
+            for(cont=0;cont < 10;cont++){
+            mostrar0 = mostrar0 + "0 + "+ cont + " = " + (cont + 0) + " | ";
+            }
+        
+
+            for(cont=0;cont < 10;cont++){
+                mostrar1 = mostrar1 + "1 + "+ cont + " = " + (cont + 1) + " | ";
+                }
+        
+
+                for(cont=0;cont < 10;cont++){
+                    mostrar2 = mostrar2 + "2 + "+ cont + " = " + (cont + 2) + " | ";
+                    }
+        
+
+                    for(cont=0;cont < 10;cont++){
+                        mostrar3 = mostrar3 + "3 + "+ cont + " = " + (cont + 3) + " | ";
+                        }
+        
+
+                        for(cont=0;cont < 10;cont++){
+                            mostrar4 = mostrar4 + "4 + "+ cont + " = " + (cont + 4) + " | ";
+                            }
+
+                            for(cont=0;cont < 10;cont++){
+                                mostrar5 = mostrar5 + "5 + " + cont + " = " + (cont + 5) + " | ";
+                                }
+        }
+
+        JOptionPane.showMessageDialog(null, mostrar0 + "\n" + mostrar1 + "\n" + mostrar2 + "\n" + mostrar3 + "\n" + mostrar4 + "\n" + mostrar5);

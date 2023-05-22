@@ -1,0 +1,4 @@
+1- Construa um algoritmo que mostre os meses do ano na quantidade 
+entrada pelo usuário.
+
+2- Construa um algoritmo que mostre a média aritmética de qualquer quantidade de valores entrada pelo usuário.

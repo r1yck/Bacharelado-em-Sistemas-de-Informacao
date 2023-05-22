@@ -1,0 +1,11 @@
+Var
+n1,n2,res
+
+inicio
+
+ler n1;
+ler n2;
+
+res = n1%n2;
+
+escreva "Resultado: " + res;

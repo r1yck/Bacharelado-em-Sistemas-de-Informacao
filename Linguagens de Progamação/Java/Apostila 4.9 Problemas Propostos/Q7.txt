@@ -1,0 +1,54 @@
+package javaapplication20;
+
+// Calculadora com 4 operações e qualquer número
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication20 {
+
+
+    public static void main(String[] args) {
+    
+        // Variaveis do algoritmo
+        
+        Double n1,n2,n3,n4,med;
+        String nome = null, sn1,sn2,sn3,sn4;
+        
+       
+        // Leitura das variaveis 
+        
+        nome = JOptionPane.showInputDialog(null,"Digite seu nome.");
+        sn1 = JOptionPane.showInputDialog(null,"Digite sua primeira nota.");
+        sn2 = JOptionPane.showInputDialog(null,"Digite sua segunda nota.");
+        sn3 = JOptionPane.showInputDialog(null,"Digite sua terceira nota.");
+        sn4 = JOptionPane.showInputDialog(null,"Digite sua quarta nota.");
+                
+        n1 = Double.parseDouble(sn1);
+        n2 = Double.parseDouble(sn2);
+        n3 = Double.parseDouble(sn3);
+        n4 = Double.parseDouble(sn4);
+        
+        med = (n1+n2+n3+n4)/4;
+        // Efetuar a operação escolhida pelo usuário e escrever o resultado
+        
+        if (med >= 6){
+        
+        JOptionPane.showMessageDialog(null,"Você foi aprovado " + nome + ".");
+        
+        }
+        
+        else {
+        
+        JOptionPane.showMessageDialog(null,"Você foi reprovado " + nome + ".");
+        
+        }
+        
+        
+           
+               
+          
+        
+        
+    }
+    
+}

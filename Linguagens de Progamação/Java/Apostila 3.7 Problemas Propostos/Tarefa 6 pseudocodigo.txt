@@ -1,0 +1,18 @@
+Var
+peso, pesoprato, valor, float;
+
+escreva "Restaurante Bem-Bão";
+escreva "Coloque o prato na balança.";
+
+escreva "Qual foi o peso em quilos?";
+ler peso;
+
+pesoprato = 0.841 * 12;
+
+valor = peso * 12.00 - pesoprato;
+
+escreva "Valor a pagar pela refeição: " + "\nR$ " + valor;
+
+fim
+
+

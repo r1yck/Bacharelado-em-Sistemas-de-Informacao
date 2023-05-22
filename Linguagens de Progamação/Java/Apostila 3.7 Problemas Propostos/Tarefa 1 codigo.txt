@@ -1,0 +1,27 @@
+
+package tarefa1;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa1 {
+
+    
+    public static void main(String[] args) {
+        
+        double com, lar, area;
+        String scom, slar;
+        
+        JOptionPane.showMessageDialog(null, "Imobiliária Imóbilis");
+        scom = JOptionPane.showInputDialog(null, "Digite o comprimento, em metros, do terreno");
+        slar = JOptionPane.showInputDialog(null, "Digite a largura, em metros, do terreno");
+        
+        com = Float.parseFloat(scom);
+        lar = Float.parseFloat(slar);
+        
+        area = com * lar;
+        
+        JOptionPane.showMessageDialog(null,"A área deste terreno será: " + "\n" + area + "m²");
+        
+    }
+    
+}

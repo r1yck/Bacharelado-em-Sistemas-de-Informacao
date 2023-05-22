@@ -1,0 +1,8 @@
+ler n1;
+
+n1 <- 9
+
+res1 <- 81
+res2 <- 3
+
+escreva "O quadrado deste número é: " + 81 + "Sua raiz quadrada é: " + 3;

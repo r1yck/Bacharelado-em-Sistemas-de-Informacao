@@ -1,0 +1,31 @@
+package r2ck;
+
+import javax.swing.JOptionPane;
+
+public class R2ck {
+
+    
+    public static void main(String[] args) {
+        
+        int n1,n2,n3,res;
+        
+        String sn1,sn2,sn3;
+        
+        //Leitura das variaveis
+        sn1 = JOptionPane.showInputDialog(null,"Digite o primeiro número para somar:");
+        sn2 = JOptionPane.showInputDialog(null,"Digite o segundo número para somar:");
+        sn3 = JOptionPane.showInputDialog(null,"Digite o terceiro número para somar:");
+       
+        n1 = Integer.parseInt(sn1);
+        n2 = Integer.parseInt(sn2);
+        n3 = Integer.parseInt(sn3);
+        
+        //Fazer soma
+        res = n1+n2+n3;
+        
+        //Escrever o resultado
+        JOptionPane.showMessageDialog(null, "Resultado: " + res);
+        
+    }
+    
+}

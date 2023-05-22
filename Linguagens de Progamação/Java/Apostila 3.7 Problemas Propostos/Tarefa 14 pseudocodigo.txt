@@ -1,0 +1,13 @@
+Var
+raio,area,float;
+
+inicio
+
+escreva "Digite o raio em cm da pizza:";
+ler raio;
+
+area <- 3.14*raio*raio;
+
+escreva "A áreaa dessa pizza é " + area + "cm²";
+
+fim

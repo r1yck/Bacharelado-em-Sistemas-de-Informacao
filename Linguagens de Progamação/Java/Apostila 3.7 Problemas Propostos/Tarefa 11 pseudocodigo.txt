@@ -1,0 +1,22 @@
+Var
+temp, anos, meses, dias, int;
+
+inicio
+
+escreva "Digite quantos dias de trabalho sem acidentes está a fábrica:";
+ler temp;
+
+anos = temp/365;
+meses = temp%365/30;
+dias = temp - 365*anos - 30*meses;
+
+escreva "A fábrica está a " + anos + "anos, " + meses + "meses e " + dias + "dias sem
+        acidentes";
+
+fim
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+1. Construa uma aplicação que verifique se uma pessoa está apta a votar. (Algoritmo, teste e código)
+
+2. Crie um aplicativo que verifique se um número é negativo ou não. (Algoritmo, teste e código)
+
+3. Crie um aplicativo que verifique a faixa de contribuição em que um contribuinte se classifica.
+Valores:
+
+Até um salário mínimo <-7,5%
+Entre um salário mínimo e dois <- 9%
+
+(Algoritmo, teste e código)
+
+
+if ( n1 < 1212)
+
+
+if (2424 >= n1 >= 1212)

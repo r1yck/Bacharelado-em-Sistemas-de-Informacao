@@ -1,0 +1,28 @@
+package tarefa9;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa9 {
+
+    
+    public static void main(String[] args) {
+        
+        float peq,med,gran,valor;
+        String speq, smed, sgran;
+        
+        speq = JOptionPane.showInputDialog(null,"Digite a quantidade de camisetas pequenas:");
+        smed = JOptionPane.showInputDialog(null,"Digite a quantidade de camisetas médias:");
+        sgran = JOptionPane.showInputDialog(null,"Digite a quantidade de camisetas grandes:");
+        
+        peq = Float.parseFloat(speq);
+        med = Float.parseFloat(smed);
+        gran = Float.parseFloat(sgran);
+        
+        valor = (peq*10) + (med*12) + (gran*15);
+        
+        
+        JOptionPane.showMessageDialog(null,"O valor arrecadado será: " + "\nR$ " + valor);
+        
+    }
+    
+}

@@ -1,0 +1,10 @@
+1. Crie um algoritmo que faça a soma entre dois números enquanto o usuário responder que deseja fazer uma soma.
+
+2. Construa um algoritmo que mostre o relatório de funcionário com no mínimo 3 funcionários e repita quantas vezes for necessário. Com nome, endereço e telefone.
+
+3. Desenvolva um algoritmo que leia a altura de 15 pessoas. Este programa deverá calcular e mostrar:
+a) A menor altura do grupo.
+b) A maior altura do grupo
+c) Média de altura do grupo.
+
+A aplicação deverá perguntar se o usuário deseja vizualizar o relatório das alturas;

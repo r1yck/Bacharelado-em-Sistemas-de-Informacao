@@ -1,0 +1,21 @@
+Var
+peq,med,gran,valor,int;
+
+inicio
+
+escreva "Fábrica de camisetas";
+
+escreva "Digite a quantidade de camisetas pequenas:";
+ler peq;
+
+escreva "Digite a quantidade de camisetas médias:";
+ler med;
+
+escreva "Digite a quantidade de camisetas grandes:";
+ler gran;
+
+valor <- peq*10 + med*12 + gran*15;
+
+escreva "O valor arrecadado será: " + "\n" + valor;
+
+fim

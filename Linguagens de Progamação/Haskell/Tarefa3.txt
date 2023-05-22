@@ -1,0 +1,19 @@
+Tarefa 3
+
+Estruturas condicionais com guardas
+
+1. Defina uma função chamada media3 que recebe três valores e retorna a sua média 
+aritmética. Se a média for >= 7 retorne aprovado.
+
+2. Defina uma função chamada maior2 que recbe dois valores e retorna o maior deles. 
+Use expressões condicionais.
+
+3. Defina uma função chamada maior2 que recebe dois valores e retorna o maior deles.
+Use equações com guardas.
+
+4. Defina uma função maior3 que recebe três valores e retorna o maior deles. Versão
+com expressões condicionais aninhadas e versão com guardas.
+
+5. Defina uma função chamada maior3 que receba três valores e retorna o maior deles. 
+Não use expressões condicionais e nem equações com guardas. Use a função maior2 do 
+exercício 3.

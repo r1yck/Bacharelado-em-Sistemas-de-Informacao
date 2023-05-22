@@ -1,0 +1,28 @@
+package q2;
+
+import javax.swing.JOptionPane;
+
+public class Q2 {
+
+
+    public static int somatoria(int x) {
+        
+        if (x == 0) 
+            return 0;
+        else
+        return x + somatoria(x-1);
+        
+    }
+    
+    public static void main(String[] args){
+    
+    int x1;
+    
+        x1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite um valor."));
+    
+        JOptionPane.showMessageDialog(null,"Resultado: " + Q2.somatoria(x1));
+    
+    
+    }
+    
+}

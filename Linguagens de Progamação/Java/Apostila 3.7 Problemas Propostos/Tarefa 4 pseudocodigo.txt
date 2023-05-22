@@ -1,0 +1,16 @@
+Var
+nome, idade, vida, int;
+
+inicio
+
+escreva "Olá! Vamos descobrir quantos dias você já viveu. Qual o seu nome?";
+ler nome;
+
+escreva "Certo " + nome + ", quantos anos você tem?";
+ler idade;
+
+vida <- idade * 365;
+
+escreva "Uau " + nome + "! Você já viveu " + vida + " dias.";
+
+fim

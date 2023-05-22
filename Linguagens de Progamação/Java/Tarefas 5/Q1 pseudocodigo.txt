@@ -1,0 +1,16 @@
+Var
+dis,temp,velm,float;
+
+inicio
+
+ler dis;
+
+ler temp;
+
+velm = dis/temp;
+
+se (velm < 110) imprima "A velocidade média foi conforme o limite.";
+
+se não imprima "A velocidade média foi superior ao limite.";
+
+fim

@@ -1,0 +1,19 @@
+Var
+com, lar, area, float;
+
+inicio
+
+escreva "Imobiliária Imóbilis";
+
+escreva "Digite o comprimento, em metros, do terreno";
+ler com;
+
+escreva "Digite a largura, em metros, do terreno";
+ler lar;
+
+area <- com * lar;
+
+escreva "A área deste terreno será: " + "\n" + area + "m²";
+
+fim
+

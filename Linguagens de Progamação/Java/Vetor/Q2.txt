@@ -1,0 +1,30 @@
+import javax.swing.JOptionPane;
+
+public class App {
+
+    
+    public static void main(String[] args) {
+
+        double num[];
+        num = new double[5];
+
+        double men;
+
+        for(int i=0;i<5;i++){
+
+            num[i] = Double.parseDouble(JOptionPane.showInputDialog(null,"Qual o número?"));
+
+        }
+
+        men = num[0];
+        for(int j=1;j<5;j++){
+
+            if(num[j] < men)
+            men = num[j];
+        }
+
+        JOptionPane.showMessageDialog(null,"Menor número: " + men);
+
+        }
+    
+}

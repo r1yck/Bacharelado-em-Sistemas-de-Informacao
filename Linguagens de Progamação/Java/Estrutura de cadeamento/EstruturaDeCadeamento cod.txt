@@ -1,0 +1,33 @@
+package estrutura.de.cadeamento;
+
+import javax.swing.JOptionPane;
+
+public class EstruturaDeCadeamento {
+
+    
+    public static void main(String[] args) {
+        
+        int num;
+        String snum;
+        
+        snum = JOptionPane.showInputDialog(null,"Digite um número para verificar se ele é par e divisível por 3:");
+        num = Integer.parseInt(snum);
+        
+        if (num%2 == 0){
+            if (num%3 == 0){
+            JOptionPane.showMessageDialog(null,num + " é par e divisível por 3.");}
+            
+            else {
+                JOptionPane.showMessageDialog(null,num + " é par mas não é divisível por 3."); 
+            }
+            
+        }
+            
+        else {
+            JOptionPane.showMessageDialog(null,num + " não é par e divisível por 3.");
+            
+        }
+        
+    }
+    
+}

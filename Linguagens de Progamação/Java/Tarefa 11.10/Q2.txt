@@ -1,0 +1,24 @@
+package q2;
+
+import javax.swing.JOptionPane;
+
+public class Q2 {
+
+    
+    public static void main(String[] args) {
+        
+        int [] [] k = new int [2][2];
+        int d;
+        
+        for(int i = 0;i < 2;i++){
+         for(int j=0 ; j<2; j++){
+         
+         k [i] [j] = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite um número para a " + (j+1) + "º coluna da " + (i+1) + "º linha"));
+         }
+        }
+        
+        d = (k[0][0] * k[1][1] - k[0] [1] * k[1][0]);
+        JOptionPane.showMessageDialog(null,"Determinante da matriz = " + d);
+    }
+    
+}

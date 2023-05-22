@@ -1,0 +1,13 @@
+Var
+n1,res1,res2;
+
+inicio
+
+ler n1;
+
+res1 = n1 * n1;
+res2 = Math.sqrt(n1);
+
+escreva "O quadrado deste número é " + res1 + "\nSua raiz quadrada é " + res2
+
+fim

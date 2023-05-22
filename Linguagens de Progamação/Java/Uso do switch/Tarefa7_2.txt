@@ -1,0 +1,59 @@
+package tarefa7_2;
+
+// Calculadora com 4 operações e qualquer número
+import javax.swing.JOptionPane;
+
+
+public class Tarefa7_2 {
+
+
+    public static void main(String[] args) {
+    
+        // Variaveis do algoritmo
+        
+        int n1,n2,n3,med;
+        String sn1,sn2,sn3;
+        
+       
+        // Leitura das variaveis
+        
+        sn1 = JOptionPane.showInputDialog(null,"Digite sua primeira nota.");
+        sn2 = JOptionPane.showInputDialog(null,"Digite sua segunda nota.");
+        sn3 = JOptionPane.showInputDialog(null,"Digite sua terceira nota.");
+        
+        n1 = Integer.parseInt(sn1);
+        n2 = Integer.parseInt(sn2);
+        n3 = Integer.parseInt(sn3);
+        
+        med = (n1+n2+n3)/3;
+                
+        
+        // Efetuar a operação escolhida pelo usuário e escrever o resultado
+        
+        switch(med){
+           
+            case 0, 1, 2:
+                
+                JOptionPane.showMessageDialog(null,"Sua média foi " + med + ". Reprovado.");
+            break;
+            
+            case 3, 4:
+                
+                JOptionPane.showMessageDialog(null,"Sua média foi " + med + ". Recuperação.");
+            break;
+            
+            case 5, 6, 7, 8, 9, 10:
+                JOptionPane.showMessageDialog(null,"Sua média foi " + med + ". Aprovado.");
+            break;
+            
+            default: 
+                JOptionPane.showMessageDialog(null,"A nota não existe.");
+        }
+           
+               
+          
+        
+        
+    }
+    
+}

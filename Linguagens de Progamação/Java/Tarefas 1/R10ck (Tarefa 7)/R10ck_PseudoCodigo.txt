@@ -1,0 +1,13 @@
+Var
+n1, res1,res2;
+
+inicio
+
+ler n1;
+
+res1 = n1*14/100;
+res2 = n1-res1;
+
+escreva "Seu salário descontado 14% é "+ res2;
+
+fim

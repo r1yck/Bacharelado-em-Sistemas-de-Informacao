@@ -1,0 +1,6 @@
+1 - Usando modularização de algoritmo, crie uma aplicação que calcule média ponderada e média aritmética de 3 valores.
+*para ponderada considere os pesos:
+2,2 e 3
+
+2 - Usando modularização de algoritmo, crie uma aplicação que receba um vetor que contenha: nome, endereço e telefone.
+Dê saída apenas para nome, telefone e endereço. 

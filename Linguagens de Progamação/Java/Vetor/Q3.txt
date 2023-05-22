@@ -1,0 +1,30 @@
+import javax.swing.JOptionPane;
+
+public class App {
+
+    
+    public static void main(String[] args) {
+
+        int num[];
+        num = new int[5];
+
+        int men;
+
+        for(int i=0;i<5;i++){
+
+            num[i] = Integer.parseInt(JOptionPane.showInputDialog(null,"Qual a idade?"));
+
+        }
+
+        men = num[4];
+        for(int j=0;j<5;j++){
+
+            if(num[j] > men)
+            men = num[j];
+        }
+
+        JOptionPane.showMessageDialog(null,"Maior idade: " + men);
+
+        }
+    
+}

@@ -1,0 +1,18 @@
+1. Implemente uma função recursiva que dá dois números x e m inteiros, calcule o valor de x elevado a m.
+Caso base: x^0 = 1
+
+2. Implemente uma função recursiva para calcular a somatória de todos os números de 1 a n.
+
+3. Usando recursividade calcule a soma de todos os valores de um array de inteiros.
+
+4. Crie um algoritmo que retorne a soma dos n primeiros números inteiros ímpares usando recursão.
+
+5. Crie um algoritmo que retorne a soma dos n primeiros números inteiros pares usando recursão.
+
+6. Pesquisar caso base e recursão e implementar um algoritmo para gerar a sequencia de fibonacci.
+
+7. Pesquisar caso base e recursão para um problema típico em ciência da computação consiste em converter 
+um número da sua forma decimal para a forma binária.
+
+a) binária para decimal.
+b) decimal para hexadecimal.
