@@ -1,8 +1,0 @@
-ler 7;
-
-escreva "Este número é positivo."
-
-ler -4;
-
-escreva "Este número é negativo"
-
