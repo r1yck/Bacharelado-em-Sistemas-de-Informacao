@@ -1,0 +1,16 @@
+Var
+imp1, imp2, imp3, double
+
+inicio
+
+escreva "Impostos de renda para determinados salários, clique em OK.";
+
+        imp1 = 0.07*1000;
+        imp2 = 0.09*2000;
+        imp3 = 0.11*3000;
+
+escreva "Imposto de renda de 7% sobre salário de 1.000:  " + imp1 + 
+        "\nImposto de renda de 9% sobre salário de 2.000:  " + imp2 +
+        "\nImposto de renda de 11% sobre salário de 3.000:  " + imp3;
+
+fim

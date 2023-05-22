@@ -1,0 +1,3 @@
+1. Informe os char de 0 a 255 com seus valores.
+
+2. Escreva um algoritmo que solicite ao usuário um caractere e solicite um segundo número que vai ser a quantidade de linhas de uma pirâmide deste caractere.

@@ -1,0 +1,115 @@
+package tarefa;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa {
+
+    
+    public static void main(String[] args) {
+        
+        
+           int mil = JOptionPane.showConfirmDialog(null,"Você contribuiu para a Polícia Militar?", "Responda",JOptionPane.YES_NO_OPTION);
+        
+        if ( mil == JOptionPane.YES_OPTION){ 
+            
+            int gen;
+            String sgen;
+            
+            sgen = JOptionPane.showInputDialog(null,"Digite o número do seu gênero. \n[1] Masculino \n[2] Feminino");
+            gen = Integer.parseInt(sgen);
+            
+            if ( gen == 1) {
+            
+            int cont;
+            String scont;
+            scont = JOptionPane.showInputDialog(null,"Você tem quantos anos de contribuição?");
+            cont = Integer.parseInt(scont);
+            
+            if (cont >= 25){
+            
+            JOptionPane.showMessageDialog(null,"Você pode se aposentar.");
+            
+            }
+            
+            else JOptionPane.showMessageDialog(null,"Você não pode se aposentar.");
+            
+            }
+            
+            if ( gen == 2) {
+            
+            int cont;
+            String scont;
+            scont = JOptionPane.showInputDialog(null,"Você tem quantos anos de contribuição?");
+            cont = Integer.parseInt(scont);
+            
+            if (cont >= 20){
+            
+            JOptionPane.showMessageDialog(null,"Você pode se aposentar.");
+            
+            }
+            
+            else JOptionPane.showMessageDialog(null,"Você não pode se aposentar.");
+                
+            }
+            
+            
+        }
+        
+        if ( mil == JOptionPane.NO_OPTION){
+        
+        int gen;
+            String sgen;
+            
+            sgen = JOptionPane.showInputDialog(null,"Digite o número do seu gênero. \n[1] Masculino \n[2] Feminino");
+            gen = Integer.parseInt(sgen);
+            
+            if ( gen == 1) {
+            
+            int cont;
+            String scont;
+            scont = JOptionPane.showInputDialog(null,"Você tem quantos anos de contribuição?");
+            cont = Integer.parseInt(scont);
+            
+            if (cont >= 30){
+            
+            JOptionPane.showMessageDialog(null,"Você pode se aposentar.");
+            
+            }
+            
+            else JOptionPane.showMessageDialog(null,"Você não pode se aposentar.");
+            
+            }
+            
+            if ( gen == 2) {
+            
+            int cont;
+            String scont;
+            scont = JOptionPane.showInputDialog(null,"Você tem quantos anos de contribuição?");
+            cont = Integer.parseInt(scont);
+            
+            if (cont >= 25){
+            
+            JOptionPane.showMessageDialog(null,"Você pode se aposentar.");
+            
+            }
+            
+            else JOptionPane.showMessageDialog(null,"Você não pode se aposentar.");
+                
+            }
+        
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+}

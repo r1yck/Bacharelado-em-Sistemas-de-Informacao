@@ -1,0 +1,13 @@
+Var
+n1, res1,res2;
+
+inicio
+
+ler n1;
+
+res1 = n1*15/100;
+res2 = n1+res1;
+
+escreva "Seu salário acrescido de 15% é "+ res2;
+
+fim

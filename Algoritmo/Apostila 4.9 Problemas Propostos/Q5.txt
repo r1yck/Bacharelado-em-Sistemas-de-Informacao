@@ -1,0 +1,34 @@
+package javaapplication18;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication18 {
+
+    
+    public static void main(String[] args) {
+        
+        double dis,gas,kml;
+        String sdis,sgas;
+        
+        sdis = JOptionPane.showInputDialog(null,"Digite a distância percorrida, em Kms:");
+        dis = Double.parseDouble(sdis);
+        
+        sgas = JOptionPane.showInputDialog(null,"Digite o combustível gasto, em litros:");
+        gas = Double.parseDouble(sgas);
+        
+        kml = gas/dis;
+        
+        if (kml <= 15){
+        
+            JOptionPane.showMessageDialog(null,"O carro é econômico.");
+            
+        }
+        
+        else {
+        
+           JOptionPane.showMessageDialog(null,"O carro não econômico.");
+        
+        }
+    }
+    
+}

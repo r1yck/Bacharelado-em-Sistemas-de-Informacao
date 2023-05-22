@@ -1,0 +1,7 @@
+ler 6;
+
+escreva "6 é par e divisível por 3.";
+----------------------------------------------------------------------
+
+ler 8
+escreva "8 não é par e divisível por 3."

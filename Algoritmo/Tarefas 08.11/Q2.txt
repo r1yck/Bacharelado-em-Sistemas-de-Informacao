@@ -1,0 +1,23 @@
+package q2;
+
+import javax.swing.JOptionPane;
+
+public class Q2 {
+
+    
+    public static double disP(double v, double t, double d) {
+        
+         v = 100; t = 0.5;
+         d = v*t;
+         return d;
+    
+      }
+    
+    public static void main(String[] args) {
+
+        double v1=0,t1=0,d1=0;
+        JOptionPane.showMessageDialog(null,"Distância percorrida pelo carro: " + disP(v1,t1,d1));
+        
+        
+    }
+}

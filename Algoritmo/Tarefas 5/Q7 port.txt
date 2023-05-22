@@ -1,0 +1,14 @@
+Var
+blus1, blus2, float;
+
+inicio
+
+ler blus1;
+
+ler blus2;
+
+se blus1 > blus2 imprima "A blusa 1 é mais cara que a blusa 2.";
+
+se blus 1 < blus2 imprima "A blusa 2 é mais cara que a blusa 1.";
+
+fim

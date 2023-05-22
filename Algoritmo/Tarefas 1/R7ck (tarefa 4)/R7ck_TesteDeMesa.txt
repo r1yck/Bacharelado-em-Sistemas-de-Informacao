@@ -1,0 +1,12 @@
+ler n1;
+ler n2;
+ler n3;
+
+n1 <- 3
+n2 <- 3
+n3 <- 3
+
+res1 <- 9
+res2 <- 27
+
+escreva "O triplo da soma desses números é:  " + 27;

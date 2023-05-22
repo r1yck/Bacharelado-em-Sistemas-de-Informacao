@@ -1,0 +1,14 @@
+Var
+n1, n2, n3, res, int
+
+início
+
+ler n1;
+ler n2;
+ler n3;
+
+res <- n1+n2+n3
+
+escreva "O resultado da soma é: " + res;
+
+fim

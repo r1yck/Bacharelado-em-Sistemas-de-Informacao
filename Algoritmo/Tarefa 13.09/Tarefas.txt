@@ -1,0 +1,16 @@
+Léo é Bolsonarista
+
+Livro de vilarin(?) exercício do repetição, 10 últimas páginas
+
+1- A mediana (Md) representa o valor central de um conjunto de dados. Construa um algoritmo que 
+encontre a mediana num conjunto de dados impares.
+EX: Mediana dos números naturais até 5. (1 2 3 4 5)
+
+2- Construa um algoritmo que gere uma tabela com a conversão de graus celsius para Fahrenheit, com
+valores variado de 1 em 1 grau, de 0 a 100 graus Celsius. Ultilize a fórmula
+f = c * 1.8 + 32. (Ultilize decremento)
+
+3- Construa um algoritmo para exibir a soma dos 100 primeiros números pares. (ultilize decremento)
+
+4- Construa um algoritmo qie mostre há quantos anos o irmão mais velho tinha o dobro da idade do
+irmão mais novo. Sendo que os irmãos tem, respectivamente, 55 e 50 anos

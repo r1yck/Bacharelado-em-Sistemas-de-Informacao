@@ -1,0 +1,16 @@
+Exercícios
+
+1. Faça um programa que leia 10 valores reais e os apresent na ordem inversa entrada.
+
+
+2. Faça um programa que receba 3 vetores de 6 posições de números reais sendo o primeiro 
+referente aos 6 primeiros meses de 2020 e o segundo aos 6 primeiros meses de 2021 ambos
+referentes ao gastos de energia elétrica de um domicílio. Mostre em outro vetor a soma 
+dos gastos de cada mês. Sendo que o índice 0 indica o mês de janeiro.
+
+
+3. Faça um programa que leia 10 números inteiros, armazene-os em um vetor, solicite um 
+valor que referencie um inteiro e:
+
+a) retorne quantas vezes o valor de referência aparece no vetor.
+b) retorne todos os números divisíveis pelo valor de referência.

@@ -1,0 +1,38 @@
+package q9;
+
+import javax.swing.JOptionPane;
+
+public class Q9 {
+
+    
+    public static void main(String[] args) {
+        
+        float n1,n2,n3;
+        String sn1,sn2;
+        
+        
+        sn1 = JOptionPane.showInputDialog(null,"Teste se um número é divisível por outro, digite o primeiro número:");
+        sn2 = JOptionPane.showInputDialog(null,"Digite o segundo número:");
+        
+        n1 = Float.parseFloat(sn1);
+        n2 = Float.parseFloat(sn2);
+        
+        n3 = n1%n2;
+        
+        if (n3 == 0){
+            JOptionPane.showMessageDialog(null,n1 + " é divisível por " + n2);
+            
+        }
+        
+        else {
+        
+           JOptionPane.showMessageDialog(null,n1 + " não é divisível por " + n2);
+        
+        }
+            
+        
+        
+        
+    }
+    
+}

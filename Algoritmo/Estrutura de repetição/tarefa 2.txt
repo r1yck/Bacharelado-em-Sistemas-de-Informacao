@@ -1,0 +1,30 @@
+import javax.swing.JOptionPane;
+
+public class App {
+
+    
+    public static void main(String[] args) {
+        
+        String nome="",end="",tel="",relatorio,func="",mostrar="";
+        int cont;
+
+        for(cont=0;cont < 3;cont++){
+
+            nome = JOptionPane.showInputDialog(null,"Nome: ");
+            end = JOptionPane.showInputDialog(null,"Endereço: ");
+            tel = JOptionPane.showInputDialog(null,"Telefone: ");
+
+            mostrar = mostrar + nome + "\n" + end + "\n" + tel + "\n\n";
+        }
+
+        relatorio = JOptionPane.showInputDialog(null,"Visualizar relatório? ");
+
+        while (relatorio.equals("sim")){
+
+           JOptionPane.showMessageDialog(null,mostrar);
+           relatorio = JOptionPane.showInputDialog(null,"Visualizar relatório novamente? ");
+        }
+
+    }
+    
+}

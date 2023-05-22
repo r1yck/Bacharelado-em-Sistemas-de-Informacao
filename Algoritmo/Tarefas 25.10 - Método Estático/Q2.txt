@@ -1,0 +1,45 @@
+package q2;
+
+import javax.swing.JOptionPane;
+
+public class Q2 {
+
+    
+    public static String nome(String n) {
+        
+         String n1;
+         n1 = n;
+         return n1;
+    
+      }
+    
+    public static String end(String e) {
+        
+         String e1;
+         e1 = e;
+         return e1;
+    
+      }
+    
+    public static String tel(String t) {
+        
+         String t1;
+         t1 = t;
+         return t1;
+    
+      }
+    
+    public static void main(String[] args) {
+        
+        String n1,e1,t1;
+        
+        n1 = JOptionPane.showInputDialog(null,"Nome do usuário: ");
+        e1 = JOptionPane.showInputDialog(null,"Endereço do usuário: ");
+        t1 = JOptionPane.showInputDialog(null,"Telefone do usuário: ");
+        
+        JOptionPane.showMessageDialog(null,"Nome: " + n1);
+        JOptionPane.showMessageDialog(null,"Endereço: " + e1);
+        JOptionPane.showMessageDialog(null,"Telefone: " + t1);
+        
+    }
+}

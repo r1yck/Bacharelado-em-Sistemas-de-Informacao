@@ -1,0 +1,30 @@
+package q6;
+
+import javax.swing.JOptionPane;
+
+public class Q6 {
+
+    public static int fibonacci(int n){
+    
+        if(n < 2)
+            return 1;
+        
+        return fibonacci(n-1) + fibonacci(n-2);
+    
+    }
+    
+    
+    public static void main(String[] args){
+    
+        String mostrar="";
+        
+        for(int i=0; i<10; i++){
+        
+            mostrar += Q6.fibonacci(i) + " ";
+        
+        }
+    
+        JOptionPane.showMessageDialog(null, mostrar + "...");
+    }
+    
+}

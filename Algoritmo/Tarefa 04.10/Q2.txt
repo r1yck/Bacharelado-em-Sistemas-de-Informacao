@@ -1,0 +1,20 @@
+package javaapplication35;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication35 {
+
+    
+    public static void main(String[] args) {
+       String [] letra = {"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"};
+        int n;
+        
+        n = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o número correspondente ao mês: "));
+        
+        for (int i = 0; i <= letra.length; i ++){
+            if (i == (n-1))
+                JOptionPane.showMessageDialog(null, "O mês é: " + letra [i]);}
+    
+}
+    
+}

@@ -1,0 +1,30 @@
+package r4ck;
+
+import javax.swing.JOptionPane;
+
+
+public class R4ck {
+
+   
+    public static void main(String[] args) {
+    
+        // Variavel
+        float n1,res;
+        String sn1;
+        
+        // Leitura da variavel
+        sn1 = JOptionPane.showInputDialog(null,"Digite um número para calcular seu cubo");
+        
+        n1 = Float.parseFloat(sn1);
+        
+        res = n1*n1*n1;
+        
+        // Escrever resultado
+        
+        JOptionPane.showMessageDialog(null,"Resultado: " + res);
+        
+        
+       
+    }
+    
+}

@@ -1,0 +1,9 @@
+1. Crie uma aplicação que receba todas as letras do alfabeto e retorne aquela desejada pelo usuário.
+Ex: 0 retorna A.
+vetor char
+
+
+2. Crie uma aplicação que receba como entrada os meses do ano, pergunte ao usuário se deseja ver o 
+mês e em seguida mostre o mes selecionado.
+vetor string
+

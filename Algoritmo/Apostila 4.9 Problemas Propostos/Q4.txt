@@ -1,0 +1,32 @@
+package javaapplication17;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication17 {
+
+    
+    public static void main(String[] args) {
+        
+        double valor,valor2;
+        String svalor;
+        
+        svalor = JOptionPane.showInputDialog(null, "Digite o valor para por na máquina:");
+        valor = Double.parseDouble(svalor);
+        
+        if (valor % 2 == 0){
+        
+        valor2 = valor*valor;
+        JOptionPane.showMessageDialog(null,"Quadrado do valor: " + valor2);
+        
+        }
+        
+        else {
+        
+        valor2 = valor*valor*valor;
+        JOptionPane.showMessageDialog(null,"Cubo do valor: " + valor2);
+        
+        }
+        
+    }
+    
+}

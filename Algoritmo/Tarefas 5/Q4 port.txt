@@ -1,0 +1,11 @@
+Var
+num,int;
+
+inicio
+ler num;
+
+se num%3 == 0 && num%2 == 0 imprima num + " é par e divisível por 3.";
+
+se não imprima num + " não é par e divisível por 3."
+
+fim

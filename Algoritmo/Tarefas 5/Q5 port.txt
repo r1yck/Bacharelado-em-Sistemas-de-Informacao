@@ -1,0 +1,12 @@
+Var
+idade,int;
+
+inicio
+
+ler idade;
+
+se idade > 18 e < 65 imprima "Você está compreendido entre 18 e 65 anos."
+
+se não imprima "Você não está compreendido entre 18 e 65 anos."
+
+fim

@@ -1,0 +1,55 @@
+package tarefa7_2;
+
+// Calculadora com 4 operações e qualquer número
+import javax.swing.JOptionPane;
+
+
+public class Tarefa7_2 {
+
+
+    public static void main(String[] args) {
+    
+        // Variaveis do algoritmo
+        
+        float pes,alt,mas;
+        String spes,salt;
+        
+       
+        // Leitura das variaveis
+        
+        spes = JOptionPane.showInputDialog(null,"Digite seu peso.");
+        salt = JOptionPane.showInputDialog(null,"Digite sua altura.");
+        
+        pes = Float.parseFloat(spes);
+        alt = Float.parseFloat(salt);
+        
+        mas = pes/(alt*alt);
+                
+        
+        // Efetuar a operação escolhida pelo usuário e escrever o resultado
+        
+        if (mas < 18 && mas > 0){
+        
+        JOptionPane.showMessageDialog(null,"Você está abaixo do peso. ");
+        
+        }
+                
+        if (mas >= 18 && mas <= 25){
+    
+        JOptionPane.showMessageDialog(null,"Você está com peso normal. ");}
+     
+        if (mas > 25) {
+     
+        JOptionPane.showMessageDialog(null,"Você está acima do peso.");
+     
+     }
+     
+     if (mas < 0)
+         
+      JOptionPane.showMessageDialog(null,"Massa não existe.");   
+    
+    }
+        
+           
+    }
+    

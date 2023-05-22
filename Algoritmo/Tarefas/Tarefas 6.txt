@@ -1,0 +1,2 @@
+Construa um algoritmo que verifique se uma pessoa tem direito a se aposentar.
+Se o usuário masculinoe policial militar ele pode apresentar com 25 anos de contribuição. Caso seja feminino, 20 anos.

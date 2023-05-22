@@ -1,0 +1,16 @@
+ler 300;
+
+ler 3;
+
+
+velm = 100;
+
+escreva "A velocidade média foi conforme o limite.";
+
+----------------------------------------------------------------------------
+ler 300;
+ler 2;
+
+velm = 150;
+
+escrevra "A velocidade média foi superior ao limite;

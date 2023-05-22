@@ -1,0 +1,7 @@
+Var
+gen,mil
+
+inicio
+
+ler gen;
+

@@ -1,0 +1,35 @@
+import javax.swing.JOptionPane;
+
+public class App {
+
+    
+    public static void main(String[] args) {
+
+        double res[],ano2020[],ano2021[];
+        res = new double[6];
+        ano2020 = new double [6];
+        ano2021 = new double [6];
+
+        String a2020="",a2021="";
+        
+        for(int i=0;i<6;i++){
+
+           a2020=JOptionPane.showInputDialog(null, "Digite os gastos do " + (i+1) + "º mês de 2020");
+           ano2020[i] = Double.parseDouble(a2020);
+
+           a2021=JOptionPane.showInputDialog(null, "Digite os gastos do " + (i+1) + "º mês de 2021");
+           ano2021[i] = Double.parseDouble(a2021);
+
+        }
+        for(int j=0;j<6;j++){
+
+
+            res[j]= ano2020[j] + ano2021[j];
+
+           JOptionPane.showMessageDialog(null,"valor = " + res[j]);
+
+        }
+        
+    }
+    
+}

@@ -1,0 +1,29 @@
+
+package javaapplication28;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication28 {
+
+    
+    public static void main(String[] args) {
+        
+        double ladoquad=5, areaquad;
+        double ladobase=3, ladoaltura=5, areatri;
+        double raio=3, areacirc;
+        
+        JOptionPane.showMessageDialog(null, "Clique em OK.");
+        
+        areaquad = ladoquad*ladoquad;
+        areatri = ladobase*ladoaltura/2;
+        areacirc = Math.PI*raio*raio;
+        
+        
+        JOptionPane.showMessageDialog(null, "Área do quadrado:  " + areaquad +"m²" +
+                "\nÁrea do triângulo:  " + areatri +"m²" +
+                "\nÁrea da circufereência:  " + areacirc +"m²");
+        
+        
+    }
+    
+}

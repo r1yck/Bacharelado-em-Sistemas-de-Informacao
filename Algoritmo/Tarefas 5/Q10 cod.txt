@@ -1,0 +1,34 @@
+package q10;
+
+import javax.swing.JOptionPane;
+
+public class Q10 {
+
+    
+    public static void main(String[] args) {
+        
+        int ano;
+        String sano;
+        
+        // Ano atual considerado como 2004
+        
+        sano = JOptionPane.showInputDialog(null,"Digite o ano que você nasceu.");
+        ano = Integer.parseInt(sano);
+        
+        if (ano <= 1988){
+            JOptionPane.showMessageDialog(null,"Você pode votar.");
+            
+        }
+        
+        else {
+        
+           JOptionPane.showMessageDialog(null,"Você não pode votar.");
+        
+        }
+            
+        
+        
+        
+    }
+    
+}

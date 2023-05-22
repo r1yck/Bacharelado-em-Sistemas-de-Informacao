@@ -1,0 +1,46 @@
+
+package javaapplication22;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication22 {
+
+    
+    public static void main(String[] args) {
+        
+        int idade,falt;
+        
+        String sIdade;
+                
+        sIdade = JOptionPane.showInputDialog(null,"Informe sua idade:");
+        
+        idade = Integer.parseInt(sIdade);
+        
+        
+                
+        if (idade >= 18)
+        {
+              JOptionPane.showInternalMessageDialog(null,"Você é maior de idade.");
+            
+        }
+        
+        if (idade < 18)
+        {
+            falt = 18 - idade;
+              JOptionPane.showInternalMessageDialog(null,"Você é menor de idade, ainda faltam " + falt + " anos.");
+            
+        }
+        
+        
+        
+        
+            
+            
+       
+        
+        
+        
+        
+    }
+    
+}

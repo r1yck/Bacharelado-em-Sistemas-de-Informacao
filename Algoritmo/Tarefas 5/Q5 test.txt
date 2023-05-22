@@ -1,0 +1,7 @@
+ler 30;
+
+escreva "Você está compreendido entre 18 e 65 anos."
+------------------------------------------------------------------------------
+
+ler 15;
+escreva "Você não está compreendido entre 18 e 65 anos."

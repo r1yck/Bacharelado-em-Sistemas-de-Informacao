@@ -1,0 +1,44 @@
+package javaapplication14;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication14 {
+
+    
+    public static void main(String[] args) {
+     
+        double sal,deb,cred,sal2;
+        String ssal,sdeb,scred;
+        
+        ssal = JOptionPane.showInputDialog(null,"Digite seu saldo:");
+        sal = Double.parseDouble(ssal);
+        
+        sdeb = JOptionPane.showInputDialog(null,"Digite seu débito:");
+        deb = Double.parseDouble(sdeb);
+        
+        scred = JOptionPane.showInputDialog(null,"Digite seu crédito:");
+        cred = Double.parseDouble(scred);
+        
+        sal2 = sal - deb + cred;
+        
+        if (sal2 < 0) {
+        
+        JOptionPane.showMessageDialog(null,"Saldo negativo em: R$" + sal2);
+        
+        }
+        
+        if (sal2 > 0) {
+        
+        JOptionPane.showMessageDialog(null,"Saldo positivo em: R$" + sal2);
+        
+        }
+        
+        if (sal2 == 0) {
+        
+        JOptionPane.showMessageDialog(null,"Saldo zero.");
+        
+        }
+        
+    }
+    
+}

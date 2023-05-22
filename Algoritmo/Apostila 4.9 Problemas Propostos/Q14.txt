@@ -1,0 +1,54 @@
+package javaapplication25;
+
+// Calculadora com 4 operações e qualquer número
+import javax.swing.JOptionPane;
+
+public class JavaApplication25 {
+
+
+    public static void main(String[] args) {
+    
+        // Variaveis do algoritmo
+        
+        float pes,alt,mas;
+        String spes,salt;
+        
+       
+        // Leitura das variaveis
+        
+        spes = JOptionPane.showInputDialog(null,"Digite seu peso.");
+        salt = JOptionPane.showInputDialog(null,"Digite sua altura.");
+        
+        pes = Float.parseFloat(spes);
+        alt = Float.parseFloat(salt);
+                
+        
+        // Efetuar a operação escolhida pelo usuário e escrever o resultado
+        
+        if (pes >= 50 && pes < 60 && alt < 1.70){
+        
+        JOptionPane.showMessageDialog(null,"Categoria novato.");
+        
+        }
+                
+        if (pes >= 60 && pes <= 80 && alt >= 1.70 && alt < 1.90){
+    
+        JOptionPane.showMessageDialog(null,"Categoria profissional.");}
+    
+    
+        if (pes < 50 || pes > 80 || alt > 1.90){
+     
+        JOptionPane.showMessageDialog(null,"Categoria amador.");}
+        
+
+       
+     }
+     }
+    
+     
+    
+    
+        
+           
+    
+    

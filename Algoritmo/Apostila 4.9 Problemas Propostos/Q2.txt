@@ -1,0 +1,72 @@
+package javaapplication15;
+
+// Calculadora com 4 operações e qualquer número
+import javax.swing.JOptionPane;
+
+public class JavaApplication15 {
+
+
+    public static void main(String[] args) {
+    
+        // Variaveis do algoritmo
+        
+        float pes,alt,mas;
+        String spes,salt;
+        
+       
+        // Leitura das variaveis
+        
+        spes = JOptionPane.showInputDialog(null,"Digite seu peso.");
+        salt = JOptionPane.showInputDialog(null,"Digite sua altura.");
+        
+        pes = Float.parseFloat(spes);
+        alt = Float.parseFloat(salt);
+        
+        mas = pes/(alt*alt);
+                
+        
+        // Efetuar a operação escolhida pelo usuário e escrever o resultado
+        
+        if (mas < 18.5 && mas > 0){
+        
+        JOptionPane.showMessageDialog(null,"Abaixo do peso. ");
+        
+        }
+                
+        if (mas >= 18.5 && mas <= 25){
+    
+        JOptionPane.showMessageDialog(null,"Peso normal. ");}
+    
+    
+        if (mas > 25 && mas <= 30) {
+     
+        JOptionPane.showMessageDialog(null,"Sobrepeso.");}
+        
+
+        if (mas > 30 && mas <= 35) {
+     
+        JOptionPane.showMessageDialog(null,"Obeso leve.");}
+        
+        if (mas > 35 && mas < 40) {
+     
+        JOptionPane.showMessageDialog(null,"Obeso moderado.");}
+        
+        if (mas >= 40) {
+     
+        JOptionPane.showMessageDialog(null,"Obeso mórbido.");}
+        
+        else {
+        
+        JOptionPane.showMessageDialog(null,"Massa não existe.");
+            
+        }
+     }
+     }
+    
+     
+    
+    
+        
+           
+    
+    

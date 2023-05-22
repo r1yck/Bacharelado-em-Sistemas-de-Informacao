@@ -1,0 +1,22 @@
+package tarefa2;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa2 {
+
+    
+    public static void main(String[] args) {
+        
+        int cav, fer;
+        String scav;
+        
+        scav = JOptionPane.showInputDialog(null, "Quantos cavalos foram comprados para o haras?");
+        
+        cav = Integer.parseInt(scav);
+        
+        fer = cav * 4;
+        
+        JOptionPane.showMessageDialog(null, "Serão necessárias " + fer + " ferraduras.");
+    }
+    
+}

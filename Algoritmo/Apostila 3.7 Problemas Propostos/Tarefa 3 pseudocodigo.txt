@@ -1,0 +1,29 @@
+Var
+pao, broa, vendpao, vendbroa, vendtotal, pou, float;
+
+inicio
+
+escreva "Padaria Hotpão.";
+
+escreva "Quantos pães franceses foram vendidos?";
+ler pao;
+
+escreva "Quantas broas foram vendidas?";
+ler broa;
+
+vendpao <- pao * 0.12;
+vendbroa <- broa * 1.50;
+
+vendtotal <- vendpao + vendbroa;
+pou <- 0.10 * vendtotal;
+
+escreva "Valor arrecadado com as vendas: " + "\nR$ " + vendtotal;
+escreva "Valor que deve ser guardado na poupança: " + "\nR$ " + pou;
+
+fim
+        
+         
+
+
+
+

@@ -1,0 +1,27 @@
+package tarefa8;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa8 {
+
+    
+    public static void main(String[] args) {
+        
+        float n1, n2, n3, mp;
+        String sn1, sn2, sn3;
+        
+        sn1 = JOptionPane.showInputDialog(null,"Digite sua primeira nota");
+        sn2 = JOptionPane.showInputDialog(null,"Digite sua segunda nota");
+        sn3 = JOptionPane.showInputDialog(null,"Digite sua terceira nota");
+        
+        n1 = Float.parseFloat(sn1);
+        n2 = Float.parseFloat(sn2);
+        n3 = Float.parseFloat(sn3);
+        
+        mp = (n1*1 + n2*2 + n3*3)/(1+2+3);
+        
+        JOptionPane.showMessageDialog(null,"A média ponderada das suas notas é: " + "\n" + mp);
+        
+    }
+    
+}

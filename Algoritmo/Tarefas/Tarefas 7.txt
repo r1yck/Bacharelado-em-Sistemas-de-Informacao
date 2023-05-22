@@ -1,0 +1,13 @@
+1. Construa um algoritmo que mostre os meses do ano de acordo com os números de 1 a 12.
+
+2. Construa um algoritmo que verifique os status de um aluno.
+Média entre 0 e 3 <- reprovado.
+Média entre 3 e 5 <- recuperação.
+Média acima de 5 <- aprovado.
+Outros valores <- nota não existe.
+
+3. Construa um algoritmo que calcule a massa corporal de uma pessoa.
+Menor que 18 <- abaixo do peso.
+Entre 18 e 25 <- normal.
+Acima de 25 <- sobrepeso.
+Outros valores <- massa não existe

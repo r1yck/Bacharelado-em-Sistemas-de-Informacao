@@ -1,0 +1,28 @@
+package tarefa4;
+
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class Tarefa4 {
+
+    
+    public static void main(String[] args) {
+        
+        int nome, idade, vida;
+        String snome = null;
+        String sidade;
+        
+        snome = JOptionPane.showInputDialog(null,"Olá! Vamos descobrir quantos dias você já viveu. Qual o seu nome?");
+        
+        sidade = JOptionPane.showInputDialog(null,"Certo " + snome + ", quantos anos você tem?");
+        idade = Integer.parseInt(sidade);
+        
+        vida = idade * 365;
+        
+        JOptionPane.showMessageDialog(null,"Uau " + snome + "! Você já viveu um pouco mais que " + vida + " dias.");
+        
+        
+        
+    }
+    
+}

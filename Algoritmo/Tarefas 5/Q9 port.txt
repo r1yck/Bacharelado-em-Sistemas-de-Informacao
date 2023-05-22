@@ -1,0 +1,12 @@
+Var
+n1,n2,float;
+
+inicio
+
+ler n1;
+ler n2;
+
+se n1%n2 = 0 imprima n1 + " é divisível por " + n2;
+se não imprima n1 + " não é divisível por " + n2;
+
+fim

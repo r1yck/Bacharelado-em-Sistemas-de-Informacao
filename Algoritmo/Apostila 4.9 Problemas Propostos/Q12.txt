@@ -1,0 +1,51 @@
+package javaapplication26;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication26 {
+
+    
+    public static void main(String[] args) {
+        
+        float a,b,c,delta,sqrtdelta,raiz1,raiz2;
+        String sa,sb,sc;
+        
+        sa = JOptionPane.showInputDialog(null,"Entre com o coeficiente A da equação de 2º grau:");
+        a = Float.parseFloat(sa);
+        
+        sb = JOptionPane.showInputDialog(null,"Entre com o coeficiente B da equação de 2º grau:");
+        b = Float.parseFloat(sb);
+        
+        sc = JOptionPane.showInputDialog(null,"Entre com o coeficiente C da equação de 2º grau:");
+        c = Float.parseFloat(sc);
+        
+        if (a == 0){
+        
+        JOptionPane.showMessageDialog(null,"Equação inválida. (A = 0)");
+        
+        }
+        
+        else {
+        
+        delta = (b*b) - (4*a*c);
+        sqrtdelta = (float)Math.sqrt(delta);
+        
+        if (delta >= 0){
+        
+        raiz1 = (-b + sqrtdelta) / 2 * a;
+        raiz2 = (-b - sqrtdelta) / 2 * a;
+        
+        JOptionPane.showMessageDialog(null,"Raiz 1: " + raiz1 + "\nRaiz 2: " + raiz2);
+        }
+        if (delta < 0){
+        
+        raiz1 = (-b + (float)Math.sqrt(-delta) )/2 * a;
+        raiz2 = (-b - (float)Math.sqrt(-delta) )/2 * a;
+        
+        JOptionPane.showMessageDialog(null,"Raiz 1: " + raiz1 + "\nRaiz 2: " + raiz2);
+        }
+        }
+        
+    }
+    
+}

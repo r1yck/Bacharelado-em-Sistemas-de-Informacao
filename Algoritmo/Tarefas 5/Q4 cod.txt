@@ -1,0 +1,28 @@
+package q4;
+
+import javax.swing.JOptionPane;
+
+public class Q4 {
+
+    
+    public static void main(String[] args) {
+        
+        int num;
+        String snum;
+        
+        snum = JOptionPane.showInputDialog(null,"Digite um número para verificar se ele é par e divisível por 3:");
+        num = Integer.parseInt(snum);
+        
+        if (num%3 == 0 && num%2 == 0){
+            JOptionPane.showMessageDialog(null,num + " é par e divisível por 3.");
+            
+        }
+            
+        else {
+            JOptionPane.showMessageDialog(null,num + " não é par e divisível por 3.");
+            
+        }
+        
+    }
+    
+}

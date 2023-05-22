@@ -1,0 +1,23 @@
+package javaapplication10;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication10 {
+
+    
+    public static void main(String[] args) {
+        
+        int contador;
+        String numero = " ";
+        
+        for (contador=0;contador <=10;contador++){
+        
+        numero = numero + contador + "\n";
+        
+        }
+        
+        JOptionPane.showMessageDialog(null, numero);
+        
+    }
+    
+}
