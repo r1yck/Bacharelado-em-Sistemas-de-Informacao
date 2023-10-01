@@ -1,0 +1,30 @@
+
+package r7ck;
+
+import javax.swing.JOptionPane;
+
+public class R7ck {
+
+    
+    public static void main(String[] args) {
+        
+        float n1,n2,n3,res1,res2;
+        String sn1,sn2,sn3;
+        
+        sn1 = JOptionPane.showInputDialog(null,"Digite o primeiro número");
+        sn2 = JOptionPane.showInputDialog(null,"Digite o segundo número");
+        sn3 = JOptionPane.showInputDialog(null,"Digite o terceiro número");
+        
+        n1 = Float.parseFloat(sn1);
+        n2 = Float.parseFloat(sn2);
+        n3 = Float.parseFloat(sn3);
+        
+        res1 = n1+n2+n3;
+        res2 = res1*3;
+        
+        JOptionPane.showMessageDialog(null,"O triplo da soma desses números é: " + res2);
+        
+        
+    }
+    
+}

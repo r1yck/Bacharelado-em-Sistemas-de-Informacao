@@ -1,0 +1,9 @@
+escreva "Impostos de renda para determinados salários, clique em OK.";
+
+        imp1 = 70;
+        imp2 = 180;
+        imp3 = 330;
+
+escreva "Imposto de renda de 7% sobre salário de 1.000:  " + 70 + 
+        "Imposto de renda de 9% sobre salário de 2.000:  " + 180 +
+        "Imposto de renda de 11% sobre salário de 3.000:  " + 330;

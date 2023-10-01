@@ -1,0 +1,36 @@
+
+package q1;
+
+import javax.swing.JOptionPane;
+
+public class Q1 {
+
+    
+    public static void main(String[] args) {
+        
+        float dis,temp,velm;
+        String sdis, stemp;
+        
+        JOptionPane.showMessageDialog(null,"Cheque se a velocidade média foi superior ao limite.");
+        
+        sdis = JOptionPane.showInputDialog(null,"Digite a distância da viagem em quilômetros:");
+        dis = Float.parseFloat(sdis);
+        
+        stemp = JOptionPane.showInputDialog(null,"Digite o tempo da viagem em horas:");
+        temp = Float.parseFloat(stemp);
+        
+        velm = dis/temp;
+        
+        if (velm < 110){
+        
+            JOptionPane.showMessageDialog(null,"A velocidade média foi conforme o limite.");
+            }
+        else {
+        JOptionPane.showMessageDialog(null,"A velocidade média foi superior ao limite.");
+        }
+        
+        
+        
+    }
+    
+}

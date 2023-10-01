@@ -1,0 +1,8 @@
+Exercícios
+
+1. Faça um programa que leia uma matriz 4x5 de inteiros e calcule a soma de todos os seus elementos positivos
+
+2. Faça um programa que leia uma matriz 2x2 de inteiros e o seu determinante. D = (a11 * a22) - (a12*a21)
+
+3. Faça um programa que leia uma matriz 3x3 de inteiros e, depois da leitura, calcule a soma dos elementos de cada
+coluna, armazenando o resultado da soma, em um vetor de 3 elementos.

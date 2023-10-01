@@ -1,0 +1,13 @@
+Var
+ano,int;
+
+inicio
+
+ler ano;
+
+se ano < 1988 imprima "Você pode votar."
+
+se não imprima "Você não pode votar."
+
+
+fim

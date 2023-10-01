@@ -1,0 +1,17 @@
+Ex.: Construir um algoritmo que mostre três linhas de números de 0 até 5.
+
+var
+contador,cont:inteiro;
+numero: cadeia;
+
+inicio
+contador <- 0;
+para contador de 0 até 3 faça
+
+          para cont de 0 até 5
+            numero = numero + cont;
+            fim_para
+
+fim_para
+Escreva numero;
+fim

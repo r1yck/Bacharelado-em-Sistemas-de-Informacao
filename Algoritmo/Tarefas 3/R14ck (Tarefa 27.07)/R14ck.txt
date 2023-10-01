@@ -1,0 +1,45 @@
+
+package javaapplication28;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication28 {
+
+    
+    public static void main(String[] args) {
+        
+        int n1;
+        
+        String sn1;
+                
+        sn1 = JOptionPane.showInputDialog(null,"Informe sua idade");
+        
+        
+        n1 = Integer.parseInt(sn1);
+        
+                
+        if (n1 >= 16)
+        {
+              JOptionPane.showInternalMessageDialog(null,"Você está apto para votar.");
+            
+        }
+        
+        else
+        {
+              JOptionPane.showInternalMessageDialog(null,"Você não está apto para votar.");
+            
+        }
+        
+        
+        
+        
+            
+            
+       
+        
+        
+        
+        
+    }
+    
+}

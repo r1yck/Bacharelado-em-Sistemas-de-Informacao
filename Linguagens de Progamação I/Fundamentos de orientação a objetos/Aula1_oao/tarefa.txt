@@ -1,0 +1,2 @@
+1. Crie um método para retornar a velocidade atual da bicicleta.
+2. Adcione um método à classe bicicleta para frear.

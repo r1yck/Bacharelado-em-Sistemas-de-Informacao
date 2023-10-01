@@ -1,0 +1,7 @@
+ler num;
+
+if num % 7 == 0 imprima num + " É múltiplo de 7";
+
+else imprima num + " Não é múltiplo de 7";
+
+fim 

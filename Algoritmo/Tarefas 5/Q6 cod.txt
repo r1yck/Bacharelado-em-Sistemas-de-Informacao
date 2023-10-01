@@ -1,0 +1,29 @@
+package q6;
+
+import javax.swing.JOptionPane;
+
+public class Q6 {
+
+    
+    public static void main(String[] args) {
+        
+        String sexo = null;
+        
+        
+        sexo = JOptionPane.showInputDialog(null,"Digite m para masculino e f para feminino:");
+        
+        if ("m".equals(sexo)){
+            JOptionPane.showMessageDialog(null,"Masculino.");
+            
+        }
+            
+        if ("f".equals(sexo)) {
+            JOptionPane.showMessageDialog(null,"Feminino.");
+            
+        }
+        
+        
+        
+    }
+    
+}

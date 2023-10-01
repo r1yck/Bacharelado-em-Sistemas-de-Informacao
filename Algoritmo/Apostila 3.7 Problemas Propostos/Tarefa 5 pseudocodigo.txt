@@ -1,0 +1,15 @@
+Var
+reais, litros, float;
+
+inicio
+
+escreva "Posto de gasolina."
+
+escreva "Quantos reais de gasolina você quer por?"
+ler reais;
+
+litros = reais/5.89;
+
+escreva "Você abasteceu " + litros + " litros de gasolina.";
+
+fim

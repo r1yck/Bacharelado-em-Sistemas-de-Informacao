@@ -1,0 +1,7 @@
+ler 16;
+
+escreva "Você está apto para votar";
+
+ler 14;
+
+escreva "Você não está apto para votar";

@@ -1,0 +1,34 @@
+package q7;
+
+import javax.swing.JOptionPane;
+
+public class Q7 {
+
+    
+    public static void main(String[] args) {
+        
+        float blus1,blus2;
+        String sblus1,sblus2;
+        
+        
+        sblus1 = JOptionPane.showInputDialog(null,"Digite o preço da blusa 1:");
+        sblus2 = JOptionPane.showInputDialog(null,"Digite o preço da blusa 2:");
+        
+        blus1 = Float.parseFloat(sblus1);
+        blus2 = Float.parseFloat(sblus2);
+        
+        if (blus1 > blus2){
+            JOptionPane.showMessageDialog(null,"A blusa 1 é mais cara que a blusa 2.");
+            
+        }
+            
+        if (blus1 < blus2) {
+            JOptionPane.showMessageDialog(null,"A blusa 2 é mais cara que a blusa 1.");
+            
+        }
+        
+        
+        
+    }
+    
+}

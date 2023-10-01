@@ -1,0 +1,12 @@
+ler 50;
+
+ler 52;
+
+escreva "A blusa 2 é mais cara que a blusa 1.";
+---------------------------------------------------------------------------------------
+
+ler 52;
+
+ler 50;
+
+escreva "A blusa 1 é mais cara que a blusa 2.";

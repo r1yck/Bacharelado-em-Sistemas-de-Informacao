@@ -1,0 +1,6 @@
+Tarefas 08/11
+
+1. Crie um aplicativo que calcule o índice de massa corporal de uma pessoa.
+Fórmula: Massa/Altura²
+
+2. Crie um aplicativo que calcula a distância percorrida por um automóvel com velocidade de 100 km/h em 30 minutos.

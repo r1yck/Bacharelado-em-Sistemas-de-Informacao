@@ -1,0 +1,46 @@
+package javaapplication7;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication7 {
+
+    
+    public static void main(String[] args) {
+        
+        double num,rest;
+        String snum;
+        
+        snum = JOptionPane.showInputDialog(null,"Digite um número.");
+        
+        num = Double.parseDouble(snum);
+        rest = num % 2;
+        
+        if (num < 10){
+            
+            if (num < 0){
+            
+                if (rest == 0){
+                
+                JOptionPane.showMessageDialog(null,"Este número é par, menor que 10, negativo.");
+                }
+                else {
+                JOptionPane.showMessageDialog(null,"Este número é menor que 10, negativo mas não é par.");
+                }
+            }
+                
+            else {
+                JOptionPane.showMessageDialog(null,"Este número é menor que 10, só que não é negativo.");}
+            
+            
+        }
+            else {
+            
+                JOptionPane.showMessageDialog(null,"Este número não é menor que 10.");
+            
+            }
+    
+    }   
+        
+    }
+    
+

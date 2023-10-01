@@ -1,0 +1,12 @@
+Var
+let;
+
+inicio
+
+ler let;
+
+se let for A, E, I, O ou U imprima let + " é uma vogal.";
+
+se não imprima let + " é uma consoante.";
+
+fim

@@ -1,0 +1,8 @@
+Tarefas 05/10
+
+1. Crie um aplicativo que receba uma matriz n dimensional, onde as duas primeiras linhas recebam os
+gastos de um domocilio com água até o mês de junho. 
+
+Crie uma terceira matriz que recebe os totais relacionados a cada mês.
+
+Obs: Somar o que tá nas colunas e guardar na terceira.

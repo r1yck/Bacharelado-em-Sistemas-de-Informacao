@@ -1,0 +1,24 @@
+
+package r8ck;
+
+import javax.swing.JOptionPane;
+
+public class R8ck {
+
+    
+    public static void main(String[] args) {
+        
+        float n1,res;
+        String sn1;
+                
+                sn1 = JOptionPane.showInputDialog(null,"Digite o valor em real");
+                
+                n1 = Float.parseFloat(sn1);
+                
+                res = n1/5;
+                
+                JOptionPane.showMessageDialog(null,"O valor em dólar é: " + res);
+    
+    }
+    
+}

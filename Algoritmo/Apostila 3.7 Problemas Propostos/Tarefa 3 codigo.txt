@@ -1,0 +1,35 @@
+package tarefa3;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa3 {
+
+    
+    public static void main(String[] args) {
+        
+        float pao, broa, vendpao, vendbroa, vendtotal, pou;
+        String spao, sbroa;
+        
+        JOptionPane.showMessageDialog(null, "Padaria Hotpão.");
+        
+        spao = JOptionPane.showInputDialog(null, "Quantos pães franceses foram vendidos?");
+        sbroa = JOptionPane.showInputDialog(null, "Quantas broas foram vendidas?");
+                
+        pao = Float.parseFloat(spao);
+        broa = Float.parseFloat(sbroa);
+        
+        vendpao = (float) (pao * 0.12);
+        vendbroa = (float) (broa * 1.50);
+        
+        vendtotal = vendpao + vendbroa;
+        pou = (float) (0.10 * vendtotal);
+        
+        JOptionPane.showMessageDialog(null, "Valor arrecadado com as vendas: " + "\nR$ " + vendtotal);
+        JOptionPane.showMessageDialog(null, "Valor que deve ser guardado na poupança: " + "\nR$ " + pou);
+        
+        
+        
+        
+    }
+    
+}

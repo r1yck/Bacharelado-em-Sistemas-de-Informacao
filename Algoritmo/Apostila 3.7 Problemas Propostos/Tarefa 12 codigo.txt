@@ -1,0 +1,27 @@
+
+package tarefa12;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa12 {
+
+    
+    public static void main(String[] args) {
+        
+        float sal,aum1,aum2,des1,des2;
+        String ssal;
+        
+        ssal = JOptionPane.showInputDialog(null,"Digite seu salário:");
+        sal = Float.parseFloat(ssal);
+        
+        aum1 = (float) (0.15*sal);
+        aum2 = sal+aum1;
+
+        des1 = (float) (0.08*aum2);
+        des2 = aum2-des1;
+        
+        JOptionPane.showMessageDialog(null,"Seu salário, aumentado de 15% e descontado 8% de impostos, respectivamente: " +
+                                      "\nR$ " + sal + "\nR$ " + aum2 + "\nR$ " + des2);
+    }
+    
+}

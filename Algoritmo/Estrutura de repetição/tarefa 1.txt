@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args)  {
+
+        double n1,n2,soma;
+        String operacao = null,sn1,sn2;
+
+        operacao = JOptionPane.showInputDialog(null,"Você quer fazer uma soma?");
+
+        while(operacao.equals("sim")){
+ 
+            sn1 = JOptionPane.showInputDialog(null,"Digite o primeiro número.");
+            sn2 = JOptionPane.showInputDialog(null,"Digite o segundo número.");
+            
+            n1 = Double.parseDouble(sn1);
+            n2 = Double.parseDouble(sn2);
+
+        soma = n1 + n2;
+
+        JOptionPane.showMessageDialog(null, soma);
+
+        operacao = JOptionPane.showInputDialog(null,"Continuar?");
+        }
+
+        
+    }
+}

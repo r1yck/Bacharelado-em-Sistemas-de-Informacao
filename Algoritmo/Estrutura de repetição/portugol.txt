@@ -1,0 +1,13 @@
+Construir um algoritmo que conte de 0 a 10.
+
+var
+contador:inteiro;
+numero: cadeia;
+
+inicio
+contador <- 0;
+Para contador de 0 até 10 faça   
+numero = numero + contador;
+fim_para
+Escreva numero;
+fim

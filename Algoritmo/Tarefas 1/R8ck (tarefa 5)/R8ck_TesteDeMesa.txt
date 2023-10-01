@@ -1,0 +1,6 @@
+ler n1;
+
+n1 <- 10;
+res <- 2.0;
+
+escreva "O valor em dólar é: " + 2.0;

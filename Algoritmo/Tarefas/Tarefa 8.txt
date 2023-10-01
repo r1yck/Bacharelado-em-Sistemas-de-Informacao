@@ -1,0 +1,11 @@
+1. Construa um algoritmo que verifique o seguinte: 
+Se um número for menor que 10, par e negativo, imprima a mensagem -> Este número é par negativo.
+
+2. Construa um algoritmo para verificar a localidade de nascimento de uma pessoa, determinando:
+País: Brasil, região, estado e cidade.
+
+3. Construa um algoritmo que indentifique o usuário de um software:
+1 -> administrador;
+2 -> usuário;
+3 -> técnico;
+4 -> convidado

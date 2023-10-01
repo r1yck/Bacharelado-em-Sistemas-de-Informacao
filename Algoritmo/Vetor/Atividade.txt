@@ -1,0 +1,5 @@
+1. Crie um algoritmo que calcule e mostre a média de 5 notas.
+
+2. ~~                    receba 5 valores reais e mostre o menor deles.
+
+3. ~~                    recebe a idade de 5 pessoas e verifique qual a mais velha.

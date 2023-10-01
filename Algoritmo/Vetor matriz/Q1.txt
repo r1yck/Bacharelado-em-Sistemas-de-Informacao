@@ -1,0 +1,27 @@
+package q2;
+
+import javax.swing.JOptionPane;
+
+public class Q2 {
+
+    
+    public static void main(String[] args) {
+        
+        double v[] [] = new double [3] [6];
+        int cont = 0;
+        
+        for(int i = 0;i < 2;i++){
+         for(int j=0 ; j<6; j++){
+         
+         v [i] [j] = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o valor gasto: "));
+         }
+        }
+        
+        for(int y = 0; y < 6; y++){
+        
+        v [2] [y] = (v [cont] [y] + v [cont +1] [y]);
+        JOptionPane.showMessageDialog(null, v [cont] [y] + " + " + v [cont +1] [y] + " = " + (v [cont] [y] + v[(cont+1)][y]));
+        }
+    }
+    
+}

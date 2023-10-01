@@ -1,0 +1,2 @@
+1. Média de aproveitamento de um aluno com base em 3 notas.
+Fórmula: ma = (n1 + (n2*2) + (n3*3) + media/7)

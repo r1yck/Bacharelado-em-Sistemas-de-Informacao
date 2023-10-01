@@ -1,0 +1,7 @@
+ler 34;
+
+escreva "Você não está com febre."
+-------------------------------------------------------------------
+ler 37;
+
+escreva "Você está com febre."

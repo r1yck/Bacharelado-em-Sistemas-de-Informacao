@@ -1,0 +1,71 @@
+package javaapplication8;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication8 {
+
+    
+    public static void main(String[] args) {
+        
+        String pais = null;
+        pais = JOptionPane.showInputDialog(null,"Digite seu país.");
+        
+        if (pais.equals("Brasil")){
+        
+            String reg = null;
+        reg = JOptionPane.showInputDialog(null,"Digite sua região.");
+            
+        if (reg.equals("Nordeste")){
+        
+            String est = null;
+        est = JOptionPane.showInputDialog(null,"Digite sua estado.");
+        
+            
+        if (est.equals("Bahia")){
+        
+            String cid = null;
+        cid = JOptionPane.showInputDialog(null,"Digite sua cidade.");
+            
+        if (cid.equals("Itapetinga")){
+        
+        JOptionPane.showMessageDialog(null,"Você é brasileiro, nordestino, baiano e itapetiguense.");
+        
+        }
+        
+        else JOptionPane.showMessageDialog(null,"Você é brasileiro, nordestino, baiano mas não é itapetiguense.");
+            
+        }    
+        
+        else {
+        
+        JOptionPane.showMessageDialog(null,"Você é brasileiro, nordestino mas não é baiano.");
+        
+        }
+        
+        }
+        
+        else {
+        
+        JOptionPane.showMessageDialog(null,"Você é brasileiro mas não é nordestino.");
+        
+        }
+            
+        }
+        
+        else {
+        
+        JOptionPane.showMessageDialog(null,"Você não é brasileiro.");
+        
+        }
+       
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+}

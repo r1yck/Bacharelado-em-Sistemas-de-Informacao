@@ -1,0 +1,28 @@
+package tarefa7;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa7 {
+
+    
+    public static void main(String[] args) {
+        
+        int dia, mes, mes2, total;
+        String sdia, smes;
+        
+        JOptionPane.showMessageDialog(null,"Informe a data de hoje");
+        sdia = JOptionPane.showInputDialog(null,"Dia:");
+        smes = JOptionPane.showInputDialog(null,"Mês:");
+        
+        dia = Integer.parseInt(sdia);
+        mes = Integer.parseInt(smes);
+        
+        mes2 = mes - 1;
+        total = dia +  mes2*30;
+        
+        JOptionPane.showMessageDialog(null,"Já se passaram " + total + " dias desde o ínicio do ano.");
+        
+        
+    }
+    
+}

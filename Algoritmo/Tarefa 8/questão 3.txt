@@ -1,0 +1,46 @@
+package javaapplication9;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication9 {
+
+    
+    public static void main(String[] args) {
+        
+        String user;
+        int us;
+        
+        // 1 -> administrador;
+        // 2 -> usuário;
+        // 3 -> técnico;
+        // 4 -> convidado
+        
+        user = JOptionPane.showInputDialog(null,"Digite seu número de usuário.");
+        us = Integer.parseInt(user);
+        switch(us){
+        
+            case 1:
+            JOptionPane.showMessageDialog(null,"Administrador.");
+            break;
+            
+            case 2:
+            JOptionPane.showMessageDialog(null,"Usuário.");
+            break;
+            
+            case 3:
+            JOptionPane.showMessageDialog(null,"Técnico.");
+            break;
+            
+            case 4:
+            JOptionPane.showMessageDialog(null,"Convidado.");
+            break;
+            
+            default:
+            JOptionPane.showMessageDialog(null,"Não existe.");
+                   
+            
+        }
+        
+    }
+    
+}

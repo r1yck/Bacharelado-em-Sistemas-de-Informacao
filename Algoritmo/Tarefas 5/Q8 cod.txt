@@ -1,0 +1,32 @@
+package q8;
+
+import javax.swing.JOptionPane;
+
+public class Q8 {
+
+    
+    public static void main(String[] args) {
+        
+        String let;
+        
+        
+        let = JOptionPane.showInputDialog(null,"Digite uma letra maiúscula:");
+        
+        
+        if ("A".equals(let) || "E".equals(let) || "I".equals(let) || "O".equals(let) || "U".equals(let)){
+            JOptionPane.showMessageDialog(null,let + " é uma vogal.");
+            
+        }
+        
+        else {
+        
+           JOptionPane.showMessageDialog(null,let + " é uma consoante.");
+        
+        }
+            
+        
+        
+        
+    }
+    
+}

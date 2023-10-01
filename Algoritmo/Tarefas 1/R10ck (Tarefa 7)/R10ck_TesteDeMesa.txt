@@ -1,0 +1,8 @@
+ler n1;
+
+n1 <- 2000
+
+res1 <- 280;
+res2 <- 1720;
+
+escreva "Seu salário acrescido de 15% é " + 1720;

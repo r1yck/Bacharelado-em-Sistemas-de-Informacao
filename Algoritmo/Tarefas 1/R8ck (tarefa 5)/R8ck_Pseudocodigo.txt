@@ -1,0 +1,12 @@
+Var
+n1,res,float
+
+inicio
+
+ler n1;
+
+res = n1/5
+
+escreva "Valor em dólar: " + res;
+
+fim

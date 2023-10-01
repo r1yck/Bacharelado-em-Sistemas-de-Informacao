@@ -1,0 +1,15 @@
+Var
+num,cen,dez,uni,int;
+
+inicio
+
+escreva "Digite um número de até três dígitos:"
+ler num;
+
+cen <- num/100;
+dez <- num%100/10;
+uni <- ((num%100)%10);
+
+escreva "Centena = " + cen + "\nDezena = " + dez + "\nUnidade = " + uni;
+
+fim

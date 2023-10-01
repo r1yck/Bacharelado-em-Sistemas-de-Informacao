@@ -1,0 +1,8 @@
+1. Construa um algoritmo que execute o seguinte:
+
+a) Pares de 0 a 10;
+b) Ímpares de 0 a 10;
+
+2. Construa um algoritmo que mostre a tabuada de um número qualquer.
+
+3. Construa um algoritmo que mostre a mensagem "Bom dia" 5 vezes.

@@ -1,0 +1,36 @@
+package q1;
+
+import javax.swing.JOptionPane;
+
+public class Q1 {
+
+    
+    public static void main(String[] args) {
+        
+        String mes[]=new String [12];
+        int n;
+        
+        mes[0]="Janeiro";
+        mes[1]="Fevereiro";
+        mes[2]="Março";
+        mes[3]="Abril";
+        mes[4]="Maio";
+        mes[5]="Junho";
+        mes[6]="Julho";
+        mes[7]="Agosto";
+        mes[8]="Setembro";
+        mes[9]="Outubro";
+        mes[10]="Novembro";
+        mes[11]="Dezembro";
+        
+        n = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o número de um mês"));
+        
+        
+        for (int i=0;i<n;i++){
+        if (n>0){if(n<13){JOptionPane.showMessageDialog(null, mes[i]);}
+        else{JOptionPane.showMessageDialog(null, "Esse número não corresponde à nenhum mês");}}
+        else{JOptionPane.showMessageDialog(null, "Esse número não corresponde à nenhum mês");}
+        }
+    }
+    
+}

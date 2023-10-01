@@ -1,0 +1,28 @@
+package r6ck;
+
+// Quadrado e raiz quadrada de um número
+
+import javax.swing.JOptionPane;
+
+
+public class R6ck {
+
+    
+    public static void main(String[] args) {
+        
+       double n1,res1,res2;
+       String sn1;
+       
+       sn1 = JOptionPane.showInputDialog(null,"Digite um número");
+               
+       n1 = Double.parseDouble(sn1);
+       
+       res1 = n1 * n1;
+       res2 = Math.sqrt(n1);
+       
+       JOptionPane.showMessageDialog(null,"O quadrado deste número é " + res1 + "\nSua raiz quadrada é " + res2);
+       
+       
+    }
+    
+}

@@ -1,0 +1,28 @@
+package tarefa11;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa11 {
+
+    
+    public static void main(String[] args) {
+        
+        int temp, anos, meses, dias;
+        String stemp;
+        
+        stemp = JOptionPane.showInputDialog(null,"Digite quantos dias de trabalho sem acidentes está a fábrica:");
+        temp = Integer.parseInt(stemp);
+        
+        anos = temp/365;
+        meses = temp%365/30;
+        dias = temp - 365*anos - 30*meses;
+        
+        JOptionPane.showMessageDialog(null,"A fábrica está a " + anos + " anos, " + meses + " meses e " + dias + " dias sem acidentes");
+
+        
+        
+        
+        
+    }
+    
+}

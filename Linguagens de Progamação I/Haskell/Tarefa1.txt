@@ -1,0 +1,6 @@
+1. Construa uma aplicação em Haskell que calcule a área de um círculo, quadrado, triângulo retângulo e retângulo.
+Áreas:
+Ac = Pi*R^2
+Aq = L^2
+At = b*h/2
+Ar = b*h

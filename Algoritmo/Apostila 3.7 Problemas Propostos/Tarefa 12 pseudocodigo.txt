@@ -1,0 +1,18 @@
+Var
+sal,aum1,aum2,des1,des2,float;
+
+inicio
+
+escreva "Digite seu salário:";
+ler sal;
+
+aum1 <- 0.15*sal;
+aum2 <- sal+aum1;
+
+des1 <- 0.08*aum2;
+des2 <- aum2-des1;
+
+escreva "Seu salário, aumentado de 15% e descontado 8% de impostos, respectivamente: " +
+        "\nR$ " + sal + "\nR$ " + aum2 + "\nR% " + des2;
+
+fim

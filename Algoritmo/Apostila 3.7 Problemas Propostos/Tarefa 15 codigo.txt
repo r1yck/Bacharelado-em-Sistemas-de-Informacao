@@ -1,0 +1,32 @@
+package tarefa15;
+
+import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
+
+public class Tarefa15 {
+
+    
+    public static void main(String[] args) {
+        
+        double conta, car, car2, and, and2, fel;
+        String sconta;
+        
+        sconta = JOptionPane.showInputDialog(null,"Digite o valor total da conta:");
+        conta = Double.parseDouble(sconta);
+        
+        car = conta/3;
+        and = conta/3;
+        
+        car2 = (double)(Math.round(car*1.0)/1.0);
+        and2 = (double)(Math.round(and*1.0)/1.0);
+        
+        fel = conta - car2 - and2;
+        DecimalFormat formatador = new DecimalFormat("0.00");
+        
+        
+        JOptionPane.showMessageDialog(null,"Carlos pagará: " + car2 + "\nAndré pagará: " 
+                                      + and2 + "\nFelipe pagará: " + formatador.format(fel));
+        
+    }
+    
+}

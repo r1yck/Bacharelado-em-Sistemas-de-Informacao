@@ -1,0 +1,5 @@
+1. Calcular o fatorial de um número
+
+Base: 
+fat(1)=1
+fat(n)=nx(n-1)

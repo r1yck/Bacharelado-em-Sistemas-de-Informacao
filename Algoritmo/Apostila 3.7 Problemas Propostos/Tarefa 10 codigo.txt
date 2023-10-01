@@ -1,0 +1,35 @@
+package tarefa10;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa10 {
+
+    
+    public static void main(String[] args) {
+        
+        double  xa, ya, xb, yb, dab;
+        String sxa, sya, sxb, syb;
+        
+        JOptionPane.showMessageDialog(null,"Cálculo da distância entre dois pontos do plano cartesiano");
+        sxa = JOptionPane.showInputDialog(null,"Digite o X do ponto A:");
+        sya = JOptionPane.showInputDialog(null,"Digite o Y do ponto A:");
+        sxb = JOptionPane.showInputDialog(null,"Digite o X do ponto B:");
+        syb = JOptionPane.showInputDialog(null,"Digite o Y do ponto B:");
+        
+        xa = Float.parseFloat(sxa); 
+        ya = Float.parseFloat(sya); 
+        xb = Float.parseFloat(sxb); 
+        yb = Float.parseFloat(syb); 
+        
+        // Ponto A <- (xa,ya)
+        // Ponto B <- (xb,yb)        Pares Ordenados
+        
+        dab = Math.sqrt((xb-xa)*(xb-xa) + (yb-ya)*(yb-ya)); // Fórmula para a distância entre os dois pontos
+        
+        
+        JOptionPane.showMessageDialog(null,"A distância entre esses dois pontos do plano cartesiano é: " + "\n" + dab);
+        
+        
+    }
+    
+}

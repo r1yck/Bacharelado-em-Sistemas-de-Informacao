@@ -1,0 +1,47 @@
+
+package javaapplication28;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication28 {
+
+    
+    public static void main(String[] args) {
+        
+        double n1;
+        
+        String sn1;
+                
+        sn1 = JOptionPane.showInputDialog(null,"Digite um número");
+        
+        
+        n1 = Double.parseDouble(sn1);
+        
+                
+        if (n1 > 0)
+        {
+              JOptionPane.showInternalMessageDialog(null,"Este número é positivo.");
+            
+        }
+        
+        if (n1 < 0)
+        {
+              JOptionPane.showInternalMessageDialog(null,"Este número é negativo.");
+            
+        }
+        
+        
+        
+        
+        
+        
+            
+            
+       
+        
+        
+        
+        
+    }
+    
+}

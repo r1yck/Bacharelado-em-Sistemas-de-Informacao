@@ -1,0 +1,25 @@
+Var
+xa, ya, xb, yb, dab;
+
+inicio
+
+escreva "Cálculo da distância entre dois pontos do plano cartesiano";
+escreva "Digite o X do ponto A:";
+ler xa;
+
+escreva "Digite o Y do ponto A:";
+ler ya;
+
+escreva "Agora digite o X do ponto B:";
+ler xb;
+
+escreva "Por fim, digite o Y do ponto B:";
+ler yb;
+
+dab <- Math.sqrt((xb-xa)*(xb-xa) + (yb-ya)*(yb-ya));
+
+escreva "A distância entre esses dois pontos do plano cartesiano é: " + "\n" + dab;     
+
+fim
+
+

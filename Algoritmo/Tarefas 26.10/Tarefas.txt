@@ -1,0 +1,8 @@
+1. Crie um aplicativo que calcule o desconto de imposto de renda da seguinte forma:
+a) Salários até R$ 1900 = insento;
+b) R$ 1900 à 3800 = 7,5%;
+c) R$ 3800 à 5600 = 11%;
+d) R$ 5600 à 7400 = 15%;
+e) Acima desses valores = 27,5%
+
+(5 métodos)

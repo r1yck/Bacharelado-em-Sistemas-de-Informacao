@@ -1,0 +1,39 @@
+package q7;
+
+import javax.swing.JOptionPane;
+
+public class Q7 {
+
+    public static int decimalparabinario(int db){
+    
+        if(db == 0)
+            return 0;
+        
+        return db % 2 + 10 * decimalparabinario(db/2);
+    
+    }
+    
+    public static int decimalparahexadecimal(int dh){
+    
+        if(dh == 0)
+            return 0;
+        
+        return dh % 16 + 10 * decimalparabinario(dh/16);
+    
+    }
+    
+    
+    
+    public static void main(String[] args){
+    
+        int db1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o valor em decimal."));
+        
+        JOptionPane.showMessageDialog(null,"Valor em binário: " + Q7.decimalparabinario(db1));
+        
+        
+        int dh1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite o valor em decimal."));
+        
+        JOptionPane.showMessageDialog(null,"Valor em hexadecimal: " + Q7.decimalparahexadecimal(dh1));
+    }
+    
+}

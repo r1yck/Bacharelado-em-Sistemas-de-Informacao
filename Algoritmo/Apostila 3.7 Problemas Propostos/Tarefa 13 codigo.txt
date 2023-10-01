@@ -1,0 +1,26 @@
+
+package tarefa.pkg13;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa13 {
+
+    
+    public static void main(String[] args) {
+        
+        int num,cen,dez,uni;
+        String snum;
+        
+        snum = JOptionPane.showInputDialog(null,"Digite um número de até três dígitos:");
+        num = Integer.parseInt(snum);
+        
+        cen = num/100;
+        dez = num%100/10;
+        uni = ((num%100)%10);
+        
+        JOptionPane.showMessageDialog(null,"Centena = " + cen + "\nDezena = " + dez + "\nUnidade = " + uni);
+        
+        
+    }
+    
+}

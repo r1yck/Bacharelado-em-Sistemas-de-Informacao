@@ -1,0 +1,15 @@
+Var
+n1,n2,n3,res1,res2;
+
+inicio
+
+ler n1;
+ler n2;
+ler n3;
+
+res1 = n1+n2+n3;
+res2 = res1*3;
+
+escreva "O triplo da soma desses números é:  " + res2;
+
+fim

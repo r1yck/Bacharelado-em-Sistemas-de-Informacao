@@ -1,0 +1,38 @@
+package javaapplication21;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication21 {
+
+    public static void main(String[] args) {
+        
+        double x,y;
+        String sx, sy;
+        
+        sx = JOptionPane.showInputDialog(null,"Digite o ponto X:");
+        x = Double.parseDouble(sx);
+        
+        sy = JOptionPane.showInputDialog(null,"Digite o ponto Y:");
+        y = Double.parseDouble(sy);
+        
+        if (y < x*x - 3*x +1){
+        
+        JOptionPane.showMessageDialog(null,"Este ponto está abaixo da parábola 'x² -3x + 1 = 0.'");
+            
+        }
+        
+        if (y > x*x - 3*x +1){
+        
+        JOptionPane.showMessageDialog(null,"Este ponto está acima da parábola x² -3x + 1 = 0.");
+            
+        }
+     
+        if (y == x*x - 3*x +1){
+        
+        JOptionPane.showMessageDialog(null,"Este ponto pertence a parábola x² -3x + 1 = 0.");
+            
+        }
+        
+    }
+    
+}

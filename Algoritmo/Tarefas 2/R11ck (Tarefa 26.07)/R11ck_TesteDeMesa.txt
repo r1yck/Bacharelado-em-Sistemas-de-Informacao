@@ -1,0 +1,10 @@
+escreva "Clique em "OK"";
+
+areaquad <- 5*5;
+areatri <- 3*5/2;
+areacirc <- pi*3*3;
+
+escreva "Área do quadrado:  " + 25 +"m²" +
+        "\nÁrea do triângulo:  " + 7,5 +"m²" +
+        "\nÁrea da circufereência:  " + 28,274333882308139146163790449516 +"m²");
+

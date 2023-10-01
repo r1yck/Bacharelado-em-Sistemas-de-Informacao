@@ -1,0 +1,24 @@
+package tarefa14;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa14 {
+
+    
+    public static void main(String[] args) {
+        
+        float raio,area;
+        String sraio;
+        
+        sraio = JOptionPane.showInputDialog(null,"Digite o raio em cm da pizza:");
+        raio = Float.parseFloat(sraio);
+        
+        area = (float) (3.14*raio*raio);
+        
+        JOptionPane.showMessageDialog(null,"A área dessa pizza é " + area + "cm²");
+        
+        
+        
+    }
+    
+}

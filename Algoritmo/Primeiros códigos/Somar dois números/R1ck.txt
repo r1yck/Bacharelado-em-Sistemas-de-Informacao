@@ -1,0 +1,32 @@
+package ricks;
+
+
+import javax.swing.JOptionPane;
+
+public class Ricks {
+
+
+    public static void main(String[] args) {
+    
+        // Variaveis do algoritmo
+        int n1,n2,res;
+        
+        String sn1,sn2;
+        
+        // Leitura das variaveis
+        sn1 = JOptionPane.showInputDialog(null,"Digite o primeiro número para somar");
+        sn2 = JOptionPane.showInputDialog(null,"Digite o segundo número para somar");
+        
+        n1 = Integer.parseInt(sn1);
+        n2 = Integer.parseInt(sn2);
+        
+        // Somar as variaveis
+        res = n1+n2;
+           
+                
+        // Escrever o resultado        
+        JOptionPane.showMessageDialog(null,"Resultado: " + res);
+        
+    }
+    
+}

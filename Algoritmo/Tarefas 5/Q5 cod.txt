@@ -1,0 +1,28 @@
+package q5;
+
+import javax.swing.JOptionPane;
+
+public class Q5 {
+
+    
+    public static void main(String[] args) {
+        
+        int idade;
+        String sidade;
+        
+        sidade = JOptionPane.showInputDialog(null,"Digite um número para verificar se ele é par e divisível por 3:");
+        idade = Integer.parseInt(sidade);
+        
+        if (idade >= 18 && idade <= 65){
+            JOptionPane.showMessageDialog(null,"Você está compreendido entre 18 e 65 anos.");
+            
+        }
+            
+        else {
+            JOptionPane.showMessageDialog(null,"Você não está compreendido entre 18 e 65 anos.");
+            
+        }
+        
+    }
+    
+}

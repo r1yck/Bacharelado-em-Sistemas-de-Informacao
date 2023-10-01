@@ -1,0 +1,53 @@
+package javaapplication28;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication28 {
+
+    
+    public static void main(String[] args) {
+        
+        double salario, tempo, bonus;
+        String sSalario, sTempo, sBonus;
+        
+        sSalario = JOptionPane.showInputDialog(null, "Qual o seu salário?");
+        sTempo = JOptionPane.showInputDialog(null, "A quanto tempo você trabalha na empresa? (em anos)");
+        salario = Double.parseDouble(sSalario);
+        tempo = Double.parseDouble(sTempo);
+        
+        if(salario < 400){
+            if(tempo < 3){
+                bonus = salario+(salario*15)/100;
+                JOptionPane.showMessageDialog(null, "Seu bônus de final do ano será de "+ bonus);
+            }
+            else{
+                bonus = salario+(salario*25)/100;
+                JOptionPane.showMessageDialog(null, "Seu bônus de final do ano será de "+ bonus);
+            }
+        }
+        else {
+            if((salario >= 400) && (salario <= 1000)){
+                if(tempo < 3){
+                    bonus = salario+(salario*12)/100;
+                    JOptionPane.showMessageDialog(null, "Seu bônus de final do ano será de "+ bonus);
+                }
+                else{
+                    bonus = salario+(salario*22)/100;
+                    JOptionPane.showMessageDialog(null, "Seu bônus de final do ano será de "+ bonus);
+                }
+            }
+            if(salario > 1000){
+                if(tempo < 3){
+                    bonus = salario+(salario*5)/100;
+                    JOptionPane.showMessageDialog(null, "Seu bônus de final do ano será de "+ bonus);
+                }
+                else{
+                    bonus = salario+(salario*15)/100;
+                    JOptionPane.showMessageDialog(null, "Seu bônus de final do ano será de "+ bonus);
+                }
+            }
+        }
+        
+    }
+    
+}

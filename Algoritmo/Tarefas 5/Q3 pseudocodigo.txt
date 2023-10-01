@@ -1,0 +1,12 @@
+Var
+num, int;
+
+inicio
+
+ler num;
+
+se num % 7 == 0 imprima num + " É múltiplo de 7";
+
+se não imprima num + " Não é múltiplo de 7";
+
+fim 

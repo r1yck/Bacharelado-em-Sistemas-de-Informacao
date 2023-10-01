@@ -1,0 +1,1 @@
+1. Crie um algoritmo que mostre a tabuada de soma de 1 a 5.

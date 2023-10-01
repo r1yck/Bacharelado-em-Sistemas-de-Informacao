@@ -1,0 +1,26 @@
+package tarefa5;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa5 {
+
+    
+    public static void main(String[] args) {
+        
+        float reais, litros;
+        String sreais;
+        
+        JOptionPane.showMessageDialog(null,"Posto de gasolina.");
+        sreais = JOptionPane.showInputDialog(null,"Quantos reais de gasolina você quer por?");
+        
+        reais = Float.parseFloat(sreais);
+        litros = (float) (reais/5.89);
+        
+        JOptionPane.showMessageDialog(null,"Você abasteceu " + litros + " litros de gasolina.");
+        
+        
+        
+        
+    }
+    
+}

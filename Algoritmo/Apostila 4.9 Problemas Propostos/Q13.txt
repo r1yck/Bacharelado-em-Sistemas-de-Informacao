@@ -1,0 +1,32 @@
+package javaapplication27;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication27 {
+
+    
+    public static void main(String[] args) {
+        
+        double l1,l2,l3;
+        String sl1,sl2,sl3;
+        
+        sl1 = JOptionPane.showInputDialog(null,"Digite o lado 1 do triângulo:");
+        l1 = Double.parseDouble(sl1);
+        
+        sl2 = JOptionPane.showInputDialog(null,"Digite o lado 2 do triângulo:");
+        l2 = Double.parseDouble(sl2);
+        
+        sl3 = JOptionPane.showInputDialog(null,"Digite o lado 3 do triângulo:");
+        l3 = Double.parseDouble(sl2);
+        
+            if (l1 == l2 && l2 == l3) {
+                JOptionPane.showMessageDialog(null,"Triângulo Equilátero");
+            } if (l1 == l2 || l2 == l3) {
+                JOptionPane.showMessageDialog(null,"Triângulo Isósceles");
+            } if (l1 != l2 && l2 != l3) { 
+                JOptionPane.showMessageDialog(null,"Triângulo Escaleno");
+            }
+        
+    }
+    
+}

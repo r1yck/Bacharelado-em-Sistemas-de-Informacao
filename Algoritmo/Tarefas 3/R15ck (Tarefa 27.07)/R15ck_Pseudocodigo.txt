@@ -1,0 +1,12 @@
+Var
+n1, double
+
+inicio
+
+ler n1;
+
+se (n1>0) escreva "Este número é positivo."
+
+se (n1<0) escreva "Este número é negativo."
+
+fim

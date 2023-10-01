@@ -1,0 +1,47 @@
+package javaapplication23;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication23 {
+
+    
+    public static void main(String[] args) {
+        
+        int vot1,vot2,vot3;
+        String svot1,svot2,svot3,cand1 = null, cand2 = null, cand3 = null;
+        
+        cand1 = JOptionPane.showInputDialog(null,"Digite o nome do candidato 1:"); 
+        cand2 = JOptionPane.showInputDialog(null,"Digite o nome do candidato 2:"); 
+        cand3 = JOptionPane.showInputDialog(null,"Digite o nome do candidato 3:"); 
+        
+        svot1 = JOptionPane.showInputDialog(null,"Digite a quantidade de votos do candidato 1:");
+        vot1 = Integer.parseInt(svot1);
+        svot2 = JOptionPane.showInputDialog(null,"Digite a quantidade de votos do candidato 2:");
+        vot2 = Integer.parseInt(svot2);
+        svot3 = JOptionPane.showInputDialog(null,"Digite a quantidade de votos do candidato 3:");
+        vot3 = Integer.parseInt(svot3);
+        
+        if (vot1 > vot2 && vot1 > vot3){
+        
+        JOptionPane.showMessageDialog(null,"O vencedor foi o candidato 1, " + cand1 + ".");
+        
+        }
+        
+        if (vot2 > vot1 && vot2 > vot3){
+        
+        JOptionPane.showMessageDialog(null,"O vencedor foi o candidato 2, " + cand2 + ".");
+        
+        }
+        
+        if (vot3 > vot1 && vot3 > vot2){
+        
+        JOptionPane.showMessageDialog(null,"O vencedor foi o candidato 3, " + cand3 + ".");
+        
+        }
+        
+        
+        
+        
+    }
+    
+}

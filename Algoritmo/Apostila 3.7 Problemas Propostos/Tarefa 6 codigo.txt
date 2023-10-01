@@ -1,0 +1,26 @@
+package tarefa6;
+
+import javax.swing.JOptionPane;
+
+public class Tarefa6 {
+
+    
+    public static void main(String[] args) {
+        
+        float peso, pesoprato, valor;
+        String speso;
+        
+        JOptionPane.showMessageDialog(null,"Restaurante Bem-Bão");
+        JOptionPane.showMessageDialog(null,"Coloque o prato na balança.");
+        
+        speso = JOptionPane.showInputDialog(null,"Qual foi o peso em quilos?");
+        peso = Float.parseFloat(speso);
+        
+        pesoprato = (float) (0.841*12);
+        valor = (float) (peso * 12.00) - pesoprato;
+        
+        JOptionPane.showMessageDialog(null,"Valor a pagar pela refeição: " + "\nR$ " + valor);
+        
+    }
+    
+}

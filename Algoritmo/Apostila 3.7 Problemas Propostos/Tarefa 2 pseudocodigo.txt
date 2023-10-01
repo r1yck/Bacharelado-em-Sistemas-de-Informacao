@@ -1,0 +1,13 @@
+Var
+cav, fer, int;
+
+inicio
+
+escreva "Quantos cavalos foram comprados para o haras?";
+ler cav;
+
+fer = cav * 4;
+
+escreva "Serão necessárias " + fer + "ferraduras.";
+
+fim

@@ -1,0 +1,12 @@
+Var
+n1,int
+
+inicio
+
+ler n1;
+
+se (n1 >= 16) escreva "Você está apto para votar";
+
+se (n1 < 16) escreva "Você não está apto para votar."
+
+fim

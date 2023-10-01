@@ -1,0 +1,27 @@
+package javaapplication12;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication12 {
+
+    // Tábuada de um número qualquer
+    
+    public static void main(String[] args) {
+        
+        int contador,num;
+        String numero = " ",snum;
+        
+        snum = JOptionPane.showInputDialog(null,"Digite um número para ver sua tabuada.");
+        num = Integer.parseInt(snum);
+        
+        for (contador=num;contador <= (num*10);contador+=num){
+        
+        numero = numero + contador + "\n";
+        
+        }
+        
+        JOptionPane.showMessageDialog(null, numero);
+        
+    }
+    
+}

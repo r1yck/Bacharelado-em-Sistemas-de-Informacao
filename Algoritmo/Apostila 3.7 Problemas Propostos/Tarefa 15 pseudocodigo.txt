@@ -1,0 +1,24 @@
+Var
+conta,car,and,fel,double;
+
+inicio
+
+escreva "Digite o valor total da conta: ";
+ler conta;
+
+car <- conta/3;
+and <- conta/3;
+
+car2 <- Math.round(car*1.0)/1.0);
+and2 <- Math.round(and*1.0)/1.0);
+
+fel <- conta - car2 - and2;
+
+formatador <- new DecimalFormat("0.00");
+
+escreva "Carlos pagará: " + car2 + "\nAndré pagará: " 
+         + and2 + "\nFelipe pagará: " + formatador.format(fel);
+
+fim
+
+

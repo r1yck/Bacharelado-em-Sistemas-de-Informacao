@@ -1,0 +1,29 @@
+
+package q2;
+
+import javax.swing.JOptionPane;
+
+public class Q2 {
+
+    
+    public static void main(String[] args) {
+        
+        float temp;
+        String stemp;
+        
+        stemp = JOptionPane.showInputDialog(null,"Digite sua temperatura:");
+        temp = Float.parseFloat(stemp);
+  
+        if (temp < 36.5){
+        
+            JOptionPane.showMessageDialog(null,"Você não está com febre.");
+            }
+        else {
+        JOptionPane.showMessageDialog(null,"Você está com febre.");
+        }
+        
+        
+        
+    }
+    
+}

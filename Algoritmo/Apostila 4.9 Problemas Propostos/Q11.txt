@@ -1,0 +1,65 @@
+package javaapplication24;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication24 {
+
+    
+    public static void main(String[] args) {
+        
+        double temp1,temp2,temp3;
+        String stemp1,stemp2,stemp3;
+        
+        stemp1 = JOptionPane.showInputDialog(null,"Digite o a temperatura de dia:"); 
+        stemp2 = JOptionPane.showInputDialog(null,"Digite o a temperatura de tarde:"); 
+        stemp3 = JOptionPane.showInputDialog(null,"Digite o a temperatura de noite:"); 
+        temp1 = Double.parseDouble(stemp1);
+        temp2 = Double.parseDouble(stemp2);
+        temp3 = Double.parseDouble(stemp3);
+        
+        
+        
+        if (temp1 > temp2 && temp1 > temp3){
+        
+        JOptionPane.showMessageDialog(null,"A temperatura mais alta foi a de dia.");
+        
+        }
+        
+        if (temp2 > temp1 && temp2 > temp3){
+        
+        JOptionPane.showMessageDialog(null,"A temperatura mais alta foi a de tarde.");
+        
+        }
+        
+        if (temp3 > temp1 && temp1 > temp2){
+        
+        JOptionPane.showMessageDialog(null,"A temperatura mais alta foi a de noite");
+        
+        }
+        
+        //
+        
+        if (temp1 < temp2 && temp1 < temp3){
+        
+        JOptionPane.showMessageDialog(null,"A temperatura mais baixa foi a de dia.");
+        
+        }
+        
+        if (temp2 < temp1 && temp2 < temp3){
+        
+        JOptionPane.showMessageDialog(null,"A temperatura mais baixa foi a de tarde.");
+        
+        }
+        
+        if (temp3 < temp1 && temp1 < temp2){
+        
+        JOptionPane.showMessageDialog(null,"A temperatura mais baixa foi a de noite");
+        
+        }
+        
+        
+        
+        
+    }
+    
+}

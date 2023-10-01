@@ -1,0 +1,49 @@
+package javaapplication16;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication16 {
+
+    
+    public static void main(String[] args) {
+        
+        int dia,idade,valor;
+        String sdia,sidade;
+        
+        sidade = JOptionPane.showInputDialog(null,"Digite sua idade:");
+        idade = Integer.parseInt(sidade);
+        
+        if (idade <= 14){
+        
+        valor = 12/2;
+        JOptionPane.showMessageDialog(null,"Preço do ingresso: R$" + valor);
+        
+        }
+        
+        if (idade > 14){
+        
+        sdia = JOptionPane.showInputDialog(null,"Digite o dia da semana. " + "\nObs: 1 para domingo, 2 para segunda, 3 para terça, e assim por diante.");
+        dia = Integer.parseInt(sdia);
+        
+        if (dia == 3){
+        
+        valor = 12/2;
+        JOptionPane.showMessageDialog(null,"Preço do ingresso: R$" + valor);
+        
+        }
+        
+        else if (dia <= 7) {
+        
+        valor = 12;
+        JOptionPane.showMessageDialog(null,"Preço do ingresso: R$" + valor);
+        }
+        
+        else if (dia > 7){
+        
+            JOptionPane.showMessageDialog(null,"Dia da semana inválido.");
+        
+        }
+        }
+    }
+    
+}

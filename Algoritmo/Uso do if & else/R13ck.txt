@@ -1,0 +1,45 @@
+
+package javaapplication28;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication28 {
+
+    
+    public static void main(String[] args) {
+        
+        int idade;
+        
+        String sIdade;
+                
+        sIdade = JOptionPane.showInputDialog(null,"Informe sua idade");
+        
+        idade = Integer.parseInt(sIdade);
+        
+        
+                
+        if (idade >= 18)
+        {
+              JOptionPane.showInternalMessageDialog(null,"De maior.");
+            
+        }
+        
+        else
+        {
+              JOptionPane.showInternalMessageDialog(null,"De menor.");
+            
+        }
+        
+        
+        
+        
+            
+            
+       
+        
+        
+        
+        
+    }
+    
+}

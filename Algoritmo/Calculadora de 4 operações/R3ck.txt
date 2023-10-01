@@ -1,0 +1,63 @@
+package r3ck;
+
+// Calculadora com 4 operações e qualquer número
+import javax.swing.JOptionPane;
+
+
+public class R3ck {
+
+
+    public static void main(String[] args) {
+    
+        // Variaveis do algoritmo
+        
+        float n1,n2,som,sub,mul,div;
+        String sn1,sn2,sop;
+        
+       
+        // Leitura das variaveis
+        
+        sn1 = JOptionPane.showInputDialog(null,"Digite o primeiro número");
+        sop = JOptionPane.showInputDialog(null,"Selecione uma operação:\n[ + ] Adição\n[ - ] Subtração\n[ * ] Multiplicação\n[ / ] Divisão");
+        sn2 = JOptionPane.showInputDialog(null,"Digite o segundo número");
+        
+        
+        n1 = Float.parseFloat(sn1);
+        n2 = Float.parseFloat(sn2);
+        
+                
+        
+        // Efetuar a operação escolhida pelo usuário e escrever o resultado
+        
+        switch(sop){
+           
+            case "+" -> {
+                som = n1+n2;
+                JOptionPane.showMessageDialog(null,"O resultado da soma é: " + som);
+            }
+            
+            case "-" -> {
+                sub = n1-n2;
+                JOptionPane.showMessageDialog(null,"O resultado da subtração é: " + sub);
+            }
+            
+            case "*" -> {
+                mul = n1*n2;
+                JOptionPane.showMessageDialog(null,"O resultado da multiplicação é: " + mul);
+            }
+            
+            case "/" -> {
+                div = n1/n2;
+                JOptionPane.showMessageDialog(null,"O resultado da divisão é: " + div);
+            }
+            
+            default -> JOptionPane.showMessageDialog(null,"OPERAÇÃO INVÁLIDA.");
+        }
+           
+               
+          
+        
+        
+    }
+    
+}

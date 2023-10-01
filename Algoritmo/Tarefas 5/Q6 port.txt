@@ -1,0 +1,12 @@
+Var
+sexo;
+
+inicio
+
+ler sexo;
+
+se sexo for "m" imprima "Masculino.";
+
+se sexo for "f" imprima "Feminino."/
+
+fim

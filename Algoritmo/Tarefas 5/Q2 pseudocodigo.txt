@@ -1,0 +1,12 @@
+Var
+temp;
+
+inicio
+
+ler temp;
+
+se (temp < 36.5) imprima "Você não está com febre."
+
+se não imprima "Você está com febre."
+
+fim

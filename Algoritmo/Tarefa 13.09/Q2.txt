@@ -1,0 +1,27 @@
+import javax.swing.JOptionPane;
+
+public class App {
+
+    
+    public static void main(String[] args) {
+        String mostrar="";
+        
+        
+        for(int c = 100;c >= 0; c--){
+
+            double f;
+            f = (c * 1.8) + 32;
+        
+            mostrar = mostrar + c + " °C = " + f + " °F      ";
+            
+            if( c % 10 == 0)
+            mostrar = mostrar + "\n";
+        
+        }
+        JOptionPane.showMessageDialog(null, mostrar);
+        
+        
+        
+    }
+    
+}

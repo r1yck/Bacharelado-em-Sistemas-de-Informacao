@@ -1,0 +1,55 @@
+
+package javaapplication28;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication28 {
+
+    
+    public static void main(String[] args) {
+        
+        double n1;
+        
+        String sn1;
+                
+        sn1 = JOptionPane.showInputDialog(null,"Digite seu salário");
+        
+        
+        n1 = Double.parseDouble(sn1);
+        
+        
+        
+                if (n1 <= 1212)
+                {
+                 JOptionPane.showMessageDialog(null, "Sua faixa de contribuição é de 7,5%");
+                }
+                
+                       
+                
+                else if (n1 < 2424)
+           
+                {
+                  
+                JOptionPane.showMessageDialog(null, "Sua faixa de contribuição é de 9%");
+                }
+                
+                
+        }
+        
+        }
+        
+        
+        
+        
+        
+        
+            
+            
+       
+        
+        
+        
+        
+    }
+    
+}
