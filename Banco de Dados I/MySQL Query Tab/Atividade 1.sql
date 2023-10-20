@@ -1,3 +1,4 @@
+create database Lojinha;
 use Lojinha;
 
 create table cliente(
