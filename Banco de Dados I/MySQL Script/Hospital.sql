@@ -1,4 +1,4 @@
-create database Farmacia;
+create database F;
 use Farmacia;
 
 create table medicamento (
