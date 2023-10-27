@@ -58,7 +58,6 @@ create table Consulta(
 );
 
 
--- Inserir dados na tabela Ambulatorio
 INSERT INTO Ambulatorio (andar, capacidade) VALUES
 (1, 30),
 (1, 30),
@@ -66,7 +65,6 @@ INSERT INTO Ambulatorio (andar, capacidade) VALUES
 (2, 50),
 (2, 15);
 
--- Inserir dados na tabela Medico
 INSERT INTO Medico (nome, idade, especialidade, CPF, cidade, cdAmb) VALUES
 ('Joao', 40, 'ortopedia', 10000100000, 'Salvador', 1),
 ('Maria', 42, 'ortopedia', 10000110000, 'Salvador', 1),
@@ -74,14 +72,12 @@ INSERT INTO Medico (nome, idade, especialidade, CPF, cidade, cdAmb) VALUES
 ('Carlos', 28, 'pediatria', 11000110000, 'Itapetinga', 3),
 ('Marcia', 33, 'pediatria', 11000111000, 'Itapetinga', 3);
 
--- Inserir dados na tabela Paciente
 INSERT INTO Paciente (nome, idade, cidade, CPF, doenca) VALUES
 ('Ana', 20, 'Itapetinga', 20000200000, 'Gripe'),
 ('Paulo', 24, 'Conquista', 20000220000, 'Fratura'),
 ('Lucia', 30, 'Itapetinga', 22000200000, 'Fratura'),
 ('Carlos', 28, 'Itapetinga', 11000110000, 'Sarampo');
 
--- Inserir dados na tabela Funcionario
 INSERT INTO Funcionario (nome, idade, cidade, salario, CPF, cdAmb) VALUES
 ('Rita', 32, 'Itapetinga', 1200, 20000100000, 1),
 ('Maria', 55, 'Conquista', 1220, 30000110000, 2),
@@ -89,7 +85,6 @@ INSERT INTO Funcionario (nome, idade, cidade, salario, CPF, cdAmb) VALUES
 ('Carlos', 44, 'Conquista', 1200, 51000110000, 4),
 ('Paula', 33, 'Salvador', 2500, 61000111000, 5);
 
--- Inserir dados na tabela Consulta
 INSERT INTO Consulta (cdCons, cdMed, cdPac, cdFunc_Marcacao, data, hora, Obs) VALUES
 (1, 1, 1, 1, '2023-06-12', '19:20', 'AGENDADO'),
 (2, 1, 4, 1, '2023-06-13', '13:20', 'AGENDADO'),
