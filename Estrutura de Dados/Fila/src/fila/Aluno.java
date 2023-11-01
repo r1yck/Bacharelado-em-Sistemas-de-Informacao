@@ -3,24 +3,39 @@ package fila;
 public class Aluno {
 
     private String nome;
-    private int id;
+    private int idade;
     private float nota;
     private String turma;
 
-    public Aluno(String nome, int id, float nota, String turma) {
-        this.nome = nome;
-        this.id = id;
-        this.nota = nota;
-        this.turma = turma;
+    //Construtor  vazio
+    public Aluno() {
+    }
+
+    //Construtor passando nome
+    public Aluno(String no) {
+        this.nome = no;
+    }
+
+    public Aluno(String no, int id) {
+        this.nome = no;
+        this.idade = id;
+    }
+
+    //Construtor passando dados
+    public Aluno(String no, int id, float n, String t) {
+        this.nome = no;
+        this.idade = id;
+        this.nota = n;
+        this.turma = t;
     }
 
     public String toString() {
-        return this.getNome() + "-" + this.getId();
+        return this.getNome() + "-" + this.getIdade();
     }
 
-    public boolean equals(Object outro) {
-        Aluno a = (Aluno) outro;
-        return this.nome.equals(a.getNome());
+    public boolean equals(Aluno outro) {
+
+        return this.nome.equals(outro.getNome());
     }
 
     public String getNome() {
@@ -31,15 +46,15 @@ public class Aluno {
         this.nome = nome;
     }
 
-    public int getId() {
-        return id;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
-    public double getNota() {
+    public float getNota() {
         return nota;
     }
 
@@ -54,4 +69,5 @@ public class Aluno {
     public void setTurma(String turma) {
         this.turma = turma;
     }
+
 }
