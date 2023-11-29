@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package listadesenhas;
 
-/**
- *
- * @author henri
- */
+import java.util.LinkedList;
+
 public class ListaSenhas {
-    
+    private LinkedList<Senha> listaSenhas;
+
+    public ListaSenhas() {
+        this.listaSenhas = new LinkedList<>();
+    }
+
+    public void adicionarSenha(Senha senha) {
+        listaSenhas.add(senha);
+    }
+
+    public void removerUltimaSenha() {
+        if (!listaSenhas.isEmpty()) {
+            listaSenhas.removeLast();
+        }
+    }
+
+    public void imprimirListaSenhas() {
+        for (Senha senha : listaSenhas) {
+            System.out.println(senha);
+        }
+    }
 }
