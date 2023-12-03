@@ -1,20 +1,17 @@
 package listadesenhas;
 
-public class Senha {
-    private String aplicativo;
-    private String senha;
+import javax.swing.*;
+import java.io.*;
+import java.util.*;
+
+class Senha implements Serializable {
+
+    String aplicativo;
+    String senha;
 
     public Senha(String aplicativo, String senha) {
         this.aplicativo = aplicativo;
         this.senha = senha;
-    }
-
-    public String getAplicativo() {
-        return aplicativo;
-    }
-
-    public String getSenha() {
-        return senha;
     }
 
     @Override
@@ -22,4 +19,3 @@ public class Senha {
         return "Aplicativo: " + aplicativo + ", Senha: " + senha;
     }
 }
-
