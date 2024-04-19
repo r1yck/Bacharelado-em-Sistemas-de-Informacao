@@ -45,6 +45,8 @@ INNER JOIN Treino AS t ON pa.Pessoa_Associada_ID = t.Pessoa_Associada_ID
 INNER JOIN Modalidade AS m ON t.Modalidade_ID = m.Modalidade_ID
 INNER JOIN Pessoa_Treinadora AS pt ON t.Horario_ID = pt.Pessoa_Treinadora_ID;
 
+SELECT * FROM tudo;
+
 -- f) Uma view chamada turno que exiba o nome completo, endereço completo, modalidade e horário de treino dos associados cujos nomes começam com a letra 'A'.
 CREATE VIEW turno AS
 SELECT CONCAT(pa.Nome, ' ', pa.Sobrenome) AS Nome_Completo, CONCAT(e.Logradouro, ', ', e.Numero, ' - ', e.Bairro) AS Endereco_Completo, m.Nome_modalidade AS Modalidade, h.Periodo AS Horario
@@ -55,6 +57,8 @@ INNER JOIN Horario AS h ON t.Horario_ID = h.Horario_ID
 INNER JOIN Endereco AS e ON pa.Endereco_ID = e.Endereco_ID
 WHERE pa.Nome LIKE 'A%';
 
+SELECT * FROM turno;
+
 -- g) Uma view chamada valor que exiba o nome completo, endereço completo, nome do plano, modalidade e valor pago pelas pessoas associadas cujos nomes contenham a letra 'S'.
 CREATE VIEW valor AS
 SELECT CONCAT(pa.Nome, ' ', pa.Sobrenome) AS Nome_Completo, CONCAT(e.Logradouro, ', ', e.Numero, ' - ', e.Bairro) AS Endereco_Completo, pl.Nome_plano AS Plano, m.Nome_modalidade AS Modalidade, pl.Valor AS Valor_Pago
@@ -64,6 +68,8 @@ INNER JOIN Treino AS t ON pa.Pessoa_Associada_ID = t.Pessoa_Associada_ID
 INNER JOIN Modalidade AS m ON t.Modalidade_ID = m.Modalidade_ID
 INNER JOIN Endereco AS e ON pa.Endereco_ID = e.Endereco_ID
 WHERE pa.Nome LIKE '%S%';
+
+SELECT * FROM valor;
 
 -- h) Uma view chamada gasto que calcule o valor médio gasto pelos associados.
 CREATE VIEW gasto AS
