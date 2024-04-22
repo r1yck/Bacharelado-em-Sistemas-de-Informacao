@@ -1,8 +1,12 @@
--- Exercício 2
+-- Exercício 2 / BD II
+-- Henrique Fontoura
 
--- a)
+-- a) A tabela original de "vendas" não está normalizada porque possui redundâncias e não segue as regras certas. 
+--    A normalização arruma isso dividindo a tabela em pedaços menores e mais organizados.
 
--- b)
+-- b) Vendas (*CdVdd*, DtVen, CdVen, CdCli, CdCanalVendas, Status, Deletado)
+--    Cliente (*CdCli*, NmCli, Cidade, Estado, Pais)
+--    Produto (*CdPro*, NmPro, Und, VrUnt)
 
 -- c)
 SELECT estado, SUM(valor) AS total_vendas
