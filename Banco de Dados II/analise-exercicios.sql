@@ -8,6 +8,8 @@
 --    Cliente (*CdCli*, NmCli, Cidade, Estado, Pais)
 --    Produto (*CdPro*, NmPro, Und, VrUnt)
 
+USE analise;
+
 -- c)
 SELECT estado, SUM(valor) AS total_vendas
 FROM vendas
