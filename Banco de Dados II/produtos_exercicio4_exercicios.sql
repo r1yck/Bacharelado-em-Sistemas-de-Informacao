@@ -64,6 +64,7 @@ DELETE FROM ITENS_CARRINHO WHERE ID_CARRINHO = 2;
 
 -- 2- Utilize o script exercicio4.sql e faça:
 
+use exercicio4;
 -- a) Trigger para baixar o estoque de um PRODUTO quando ele for vendido:
 CREATE TRIGGER BaixarEstoqueVenda
 AFTER INSERT ON EX2_ITEMPEDIDO
