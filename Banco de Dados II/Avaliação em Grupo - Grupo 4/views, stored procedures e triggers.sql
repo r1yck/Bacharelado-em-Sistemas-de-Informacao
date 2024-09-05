@@ -374,6 +374,29 @@ DELETE FROM Clientes WHERE ClienteID = 21;
 -- Verifica os clientes restantes
 SELECT * FROM Clientes;
 
+/* 3 d) Atualize o valor total de um pedido ao inserir um novo item na tabela ItensPedidos. */
+-- Define o delimitador para permitir a criação da trigger
+DELIMITER //
+
+CREATE TRIGGER AtualizarValorPedidoAoInserirItem AFTER INSERT ON ItensPedido
+FOR EACH ROW
+BEGIN
+    -- Atualizar o valor total do pedido após a inserção de um novo item
+    UPDATE Pedidos p
+    JOIN (
+        SELECT PedidoNumero, SUM(Quantidade * Preco) AS NovoValorTotal
+        FROM ItensPedido i
+        JOIN Produtos pr ON i.ProdutoID = pr.ProdutoID
+        WHERE i.PedidoNumero = NEW.PedidoNumero
+        GROUP BY i.PedidoNumero
+    ) AS TotalPedido ON p.Numero = TotalPedido.PedidoNumero
+    SET p.Valor = TotalPedido.NovoValorTotal;
+END;
+
+//
+
+DELIMITER ;
+
 /* 3 e) Impeça a inserção de um pedido se o valor total for negativo */
 
 -- Define o delimitador para permitir a criação da trigger
@@ -395,4 +418,27 @@ DELIMITER ;
 
 -- Testa a trigger inserindo um pedido com valor negativo
 INSERT INTO Pedidos (ClienteID, Data, Valor, ProdutoID) VALUES (1, '2024-09-01', -50.00, 1);
+
+/* 3 f) Impeça a inserção de um item em um pedido se a quantidade solicitada exceder o estoque disponível. */
+DELIMITER //
+
+CREATE TRIGGER ImpedirInsercaoItemExcederEstoque BEFORE INSERT ON ItensPedido
+FOR EACH ROW
+BEGIN
+    DECLARE estoque_atual INT;
+    
+    -- Verificar o estoque disponível do produto
+    SELECT QtdeEstoque INTO estoque_atual FROM Produtos WHERE ProdutoID = NEW.ProdutoID;
+    
+    -- Se a quantidade solicitada exceder o estoque disponível, impedir a inserção
+    IF NEW.Quantidade > estoque_atual THEN
+        SIGNAL SQLSTATE '45000' 
+        SET MESSAGE_TEXT = 'Quantidade solicitada excede o estoque disponível.';
+    END IF;
+END;
+
+//
+
+DELIMITER ;
+
 
