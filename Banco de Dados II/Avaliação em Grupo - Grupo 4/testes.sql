@@ -58,5 +58,17 @@ INSERT INTO Clientes (NomeCliente, Telefone, Endereco) VALUES ('Robert Santos', 
 DELETE FROM Clientes WHERE ClienteID = 21;
 SELECT * FROM Clientes;
 
+/*3 d) Atualize o valor total de um pedido ao inserir um novo item na tabela ItensPedidos. */
+-- Verifique se o pedido número 1 já existe; caso contrário, insira um novo pedido
+INSERT INTO Pedidos (Numero, ClienteID, Data, Valor) 
+VALUES (1, 1, '2024-08-21', 0)
+ON DUPLICATE KEY UPDATE Numero = Numero;
+-- Inserir um novo item no pedido
+INSERT INTO ItensPedido (PedidoNumero, ProdutoID, Quantidade) VALUES (1, 1, 2);
+
 /*3 e) Impeça a inserção de um pedido se o valor total for negativo*/
 INSERT INTO Pedidos (ClienteID, Data, Valor, ProdutoID) VALUES (1, '2024-09-01', -50.00, 1);
+
+/*3 f) Impeça a inserção de um item em um pedido se a quantidade solicitada exceder o estoque disponível.*/
+INSERT INTO ItensPedido (PedidoNumero, ProdutoID, Quantidade) VALUES (1, 1, 100);
+
