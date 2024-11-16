@@ -1,0 +1,3 @@
+[submodule "Desenvolvimento-para-Dispositivos-Moveis/SafeK8s"]
+	path = Desenvolvimento-para-Dispositivos-Moveis/SafeK8s
+	url = https://github.com/r1yck/SafeK8s
