@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql_tabd
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ADMIN_PASS}
+      MYSQL_DATABASE: atividade1_bd
+    ports:
+      - "127.0.0.1:3306:3306"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+      - mysql_data:/var/lib/mysql
+      - ./certs:/etc/mysql/certs:ro
+    command: [
+      "mysqld",
+      "--ssl-ca=/etc/mysql/certs/ca.pem",
+      "--ssl-cert=/etc/mysql/certs/server-cert.pem",
+      "--ssl-key=/etc/mysql/certs/server-key.pem"
+    ]
+    restart: unless-stopped
+
+  adminer:
+    image: adminer
+    container_name: lab_adminer
+    restart: always
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql_data:
+    driver: local
