@@ -26,3 +26,33 @@ CREATE TABLE itens_pedido (
 	quantidade INT,
 	preco_unitario DECIMAL(10,2)
 );
+
+ INSERT INTO clientes (nome, email, cidade)
+
+SELECT
+
+'Cliente' || i,
+
+'cliente' || i || '@email.com',
+
+CASE
+
+WHEN i % 4 = 0 THEN 'Salavador'
+
+WHEN i % 4 = 1 THEN 'Feira de Santana'
+
+WHEN i % 4 = 2 THEN 'Vitoria da Conquista'
+
+ELSE 'Ilheus'
+
+END
+
+FROM generate-series(1,1000) AS s(i); 
+
+INSERT INTO produtos (nome, preco, categoria) VALUES
+('Notebook', 3500, 'Eletronicos'),
+('Mouse', 50, 'Acessorios'),
+('Teclado', 120, 'Acessorios'),
+('Monitor', 500, 'Eletronicos'),
+('Cadeira', 800, 'Moveis'),
+('Mesa', 1200, 'Moveis');
