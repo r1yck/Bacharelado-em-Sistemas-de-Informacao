@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
   postgres-db:
     image: postgres:15
     container_name: postgres_tabd
     environment:
-      POSTGRES_PASSWORD: ${DB_ADMIN_PASS}
-      POSTGRES_DB: atividade1_bd
-      POSTGRES_USER: root
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - "127.0.0.1:5432:5432"
     volumes:
