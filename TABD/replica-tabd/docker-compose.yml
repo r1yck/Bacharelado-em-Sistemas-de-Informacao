@@ -1,0 +1,60 @@
+services:
+  postgres_master:
+    image: postgres:16-alpine
+    container_name: c_master
+    
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: replicacao
+    
+    ports:
+      - "5432:5432"
+    
+    volumes:
+      - ./master/postgresql.conf:/postgresql.conf
+      - ./master/pg_hba.conf:/pg_hba.conf
+      - ./master/init.sql:/docker-entrypoint-initdb.d/init.sql
+    
+    command: >
+      postgres
+      -c config_file=/postgresql.conf
+      -c hba_file=/pg_hba.conf
+    
+    networks:
+      - pgnet
+
+  postgres_replica:
+    image: postgres:16-alpine
+    container_name: c_replica
+    
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    
+    depends_on:
+      - postgres_master
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - ./replica/setup-replica.sh:/setup-replica.sh
+
+    entrypoint: ["/bin/bash", "/setup-replica.sh"]
+
+    networks:
+      - pgnet
+
+  adminer:
+    image: adminer
+    container_name: c_adminer
+    
+    ports:
+        - "8080:8080"
+    
+    networks:
+      - pgnet
+
+networks:
+  pgnet:
